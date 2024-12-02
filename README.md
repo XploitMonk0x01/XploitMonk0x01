@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on Web Exploitation<br>👯 I’m looking to collaborate on cyber security related contents<br>🤝 I’m looking for help with web exploitation<br>🌱 I’m currently learning network penetration and OSCP <br>💬 Ask me about cyber security<br>⚡ Fun fact - I am very versatile and workaholic.
+🔭 I’m currently working on Networking<br>👯 I’m looking to collaborate on cyber security related contents<br>🤝 I’m looking for help with web exploitation<br>🌱 I’m currently learning Rust <br>💬 Ask me about cyber security<br>⚡ Fun fact - I am very versatile and workaholic.
 
 
 ## 🌐 Socials:
