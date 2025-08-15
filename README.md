@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on Bug Bounty<br>👯 I’m looking to collaborate on cyber security related contents<br>🤝 I’m looking for help with Networking<br>🌱 I’m currently learning Rust <br>💬 Ask me about cyber security<br>⚡ Fun fact - I am very versatile and workaholic.
+🔭 I’m currently working on Digital Forensics<br>👯 I’m looking to collaborate on cyber security related contents<br>🤝 I’m looking for help with Networking<br>🌱 I’m currently learning Cloud Security <br>💬 Ask me about cyber security<br>⚡ Fun fact - I am very versatile and workaholic.
 
 
 ## 🌐 Socials:
