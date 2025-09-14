@@ -1,6 +1,6 @@
 # ⚡ XploitMonk0x01 ⚡
 ```
-┌─[root@exploitmonk]─[~]
+┌─[root@master]─[~]
 └──╼ $ whoami
 >>> Digital Shadow | OSINT Specialists | Code Breaker | Prompt Engineer
 ```
