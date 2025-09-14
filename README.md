@@ -1,55 +1,143 @@
-# 👁‍🗨 XploitMonk0x01
-
-💀 **Aspiring Cybersecurity Professional | Digital Forensics | Cloud Security Enthusiast | CTF Solver**
-
----
-
-## 💫 About Me
-🔭 Currently exploring **Digital Forensics** and **Cloud Security** (AWS & Google Cloud)  
-👯 Open to collaborating on **cybersecurity projects and CTF challenges**  
-🤝 Always learning & seeking guidance in **Networking and Security**  
-🌱 Constantly sharpening skills in **penetration testing, ethical hacking, and labs**  
-💬 Ask me about **vulnerabilities, exploits, and threat analysis**  
-⚡ Fun Fact: I’m **versatile, workaholic, and obsessed with problem-solving**  
+# ⚡ XploitMonk0x01 ⚡
+```
+┌─[root@exploitmonk]─[~]
+└──╼ $ whoami
+>>> Digital Shadow | OSINT Specialists | Code Breaker | Prompt Engineer
+```
 
 ---
 
-## 🌐 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/chandansemwal)  
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/XploitMonk0x01)  
+## 🔥 SYSTEM.INIT()
+
+```python
+class HackerProfile:
+    def __init__(self):
+        self.status = "ONLINE"
+        self.mode = "RECON_MODE"
+        self.specialty = ["Digital_Forensics", "Cloud_Security", "Penetration_Testing"]
+        self.current_objective = "Mastering AWS & GCP Security"
+        
+    def scan_interests(self):
+        return {
+            "🎯 PRIMARY_TARGET": "Cybersecurity Mastery",
+            "🔍 RECON_PHASE": "Digital Forensics & Cloud Security",
+            "🤝 COLLABORATION": "Open to joint CTF raids",
+            "📡 LEARNING_MODE": "Networking protocols & Security frameworks",
+            "⚡ EXPLOIT_CHAIN": "Pentesting → Ethical Hacking → Lab Scenarios"
+        }
+```
 
 ---
 
-## 💻 Tech & Tools
-**Programming & Scripting:**  
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)  
+## 🌐 NETWORK.CONNECT()
 
-**Cybersecurity & Forensics:**  
-![TryHackMe](https://img.shields.io/badge/TryHackMe-FF6A00?style=for-the-badge&logo=tryhackme&logoColor=white) ![Kali Linux](https://img.shields.io/badge/KaliLinux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-0CA3D2?style=for-the-badge&logo=wireshark&logoColor=white)  
+```bash
+# Establish secure connections
+ssh root@linkedin.com/in/chandansemwal
+git clone https://github.com/XploitMonk0x01.git
+```
 
-**Cloud & Deployment:**  
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%23F5F5F5.svg?style=for-the-badge&logo=google-cloud&logoColor=4285F4)  
-
-**Other Tools:**  
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
+[![SECURE_CHANNEL](https://img.shields.io/badge/LinkedIn-0xFF0000?style=flat-square&logo=linkedin&logoColor=white&labelColor=black)](https://linkedin.com/in/chandansemwal)
+[![REPO_ACCESS](https://img.shields.io/badge/GitHub-0xFF0000?style=flat-square&logo=github&logoColor=white&labelColor=black)](https://github.com/XploitMonk0x01)
 
 ---
 
-## 📊 GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=XploitMonk0x01&theme=dark&hide_border=false&include_all_commits=true&count_private=false)  
-![](https://github-readme-streak-stats.herokuapp.com/?user=XploitMonk0x01&theme=dark&hide_border=false)  
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=XploitMonk0x01&theme=dark&hide_border=false&layout=compact)
+## ⚔️ ARSENAL.EXE
+
+```
+┌──────────────────────────────────────────┐
+│             EXPLOITATION TOOLS            │
+├──────────────────────────────────────────┤
+│ [LANGUAGES]                              │
+│ ├─ C/C++        ████████████████ 100%    │
+│ ├─ Python       ████████████████ 100%    │
+│ └─ Bash         ████████████████ 100%    │
+│                                          │
+│ [HACKING_SUITE]                          │
+│ ├─ Kali Linux   ████████████████ 100%    │
+│ ├─ TryHackMe    ████████████████ 100%    │
+│ └─ Wireshark    ████████████████ 100%    │
+│                                          │
+│ [CLOUD_WARFARE]                          │
+│ ├─ AWS Security ██████████████▒▒ 80%     │
+│ └─ GCP Security ████████████▒▒▒▒ 70%     │
+│                                          │
+│ [DEV_ARSENAL]                            │
+│ ├─ Docker       ████████████████ 100%    │
+│ ├─ Git          ████████████████ 100%    │
+│ └─ VS Code      ████████████████ 100%    │
+└──────────────────────────────────────────┘
+```
+
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white&labelColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=black)
+![Python](https://img.shields.io/badge/Python-FF0000?style=for-the-badge&logo=python&logoColor=white&labelColor=black)
+![Bash](https://img.shields.io/badge/Bash-FF0000?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=black)
+![Kali](https://img.shields.io/badge/Kali_Linux-FF0000?style=for-the-badge&logo=kali-linux&logoColor=white&labelColor=black)
+![AWS](https://img.shields.io/badge/AWS-FF0000?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=black)
 
 ---
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=XploitMonk0x01&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+## 📊 SURVEILLANCE.DATA()
+
+```
+╭─────────────────────── THREAT METRICS ───────────────────────╮
+│                                                               │
+```
+
+![](https://github-readme-stats.vercel.app/api?username=XploitMonk0x01&theme=dark&hide_border=true&include_all_commits=true&count_private=false&bg_color=0d1117&text_color=00ff00&icon_color=ff0000&title_color=ff0000)
+
+![](https://github-readme-streak-stats.herokuapp.com/?user=XploitMonk0x01&theme=dark&hide_border=true&background=0d1117&ring=ff0000&fire=00ff00&currStreakLabel=00ff00)
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=XploitMonk0x01&theme=dark&hide_border=true&layout=compact&bg_color=0d1117&text_color=00ff00&title_color=ff0000)
+
+```
+│                                                               │
+╰───────────────────────────────────────────────────────────────╯
+```
 
 ---
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## 🏴‍☠️ ACHIEVEMENT.UNLOCKED()
+
+```
+┌─[TROPHIES_ACQUIRED]─[/var/log/achievements]
+└──╼ $ ls -la *.trophy
+```
+
+![](https://github-profile-trophy.vercel.app/?username=XploitMonk0x01&theme=onedark&no-frame=true&no-bg=true&margin-w=4&column=4)
 
 ---
 
-*Proudly crafted by a hacker at heart 🚀*
+## 💀 HACKER.WISDOM()
+
+```bash
+#!/bin/bash
+while true; do
+    echo "$(curl -s https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)"
+    sleep 86400  # Daily wisdom injection
+done
+```
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true)
+
+---
+
+```
+┌─[SYSTEM_MESSAGE]─[2025-09-14]─[ACTIVE]
+└──╼ $ echo "Access Granted. Welcome to the Matrix."
+
+    ██░ ██  ▄▄▄       ▄████▄   ██ ▄█▀▓█████  ██▀███  
+   ▓██░ ██▒▒████▄    ▒██▀ ▀█   ██▄█▒ ▓█   ▀ ▓██ ▒ ██▒
+   ▒██▀▀██░▒██  ▀█▄  ▒▓█    ▄ ▓███▄░ ▒███   ▓██ ░▄█ ▒
+   ░▓█ ░██ ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄ ▒▓█  ▄ ▒██▀▀█▄  
+   ░▓█▒░██▓ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄░▒████▒░██▓ ▒██▒
+    ▒ ░░▒░▒ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒░░ ▒░ ░░ ▒▓ ░▒▓░
+    ▒ ░▒░ ░  ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░ ░ ░  ░  ░▒ ░ ▒░
+    ░  ░░ ░  ░   ▒   ░        ░ ░░ ░    ░     ░░   ░ 
+    ░  ░  ░      ░  ░░ ░      ░  ░      ░  ░   ░     
+                     ░                               
+
+[MISSION]: Securing the digital realm, one exploit at a time 🔴
+[STATUS]: Ready for next infiltration...
+```
