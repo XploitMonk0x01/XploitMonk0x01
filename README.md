@@ -1,143 +1,160 @@
-# ⚡ XploitMonk0x01 ⚡
+<div align="center">
+
 ```
-┌─[root@master]─[~]
-└──╼ $ whoami
->>> Digital Shadow | OSINT Specialists | Code Breaker | Prompt Engineer
+▓█████▄ ██▓  ▄████  ██▓▄▄▄█████▓ ▄▄▄       ██▓
+▒██▀ ██▌▓██▒ ██▒ ▀█▒▓██▒▓  ██▒ ▓▒▒████▄    ▓██▒
+░██   █▌▒██▒▒██░▄▄▄░▒██▒▒ ▓██░ ▒░▒██  ▀█▄  ▒██░
+░▓█▄   ▌░██░░▓█  ██▓░██░░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░
+░▒████▓ ░██░░▒▓███▀▒░██░  ▒██▒ ░  ▓█   ▓██▒░██████▒
+ ▒▒▓  ▒ ░▓   ░▒   ▒ ░▓    ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░
+ ░ ▒  ▒  ▒ ░  ░   ░  ▒ ░    ░      ▒   ▒▒ ░░ ░ ▒  ░
+ ░ ░  ░  ▒ ░░ ░   ░  ▒ ░  ░        ░   ▒     ░ ░
+   ░     ░        ░  ░                  ░  ░    ░  ░
+```
+
+### `root@XploitMonk0x01 ~ $ cat whoami.txt`
+
+**Malware Analyst · Reverse Engineer · Digital Forensics Investigator**
+
+*B.Tech CSE (Quick Heal Specialization) · Parul University · 6th Semester*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-chandansemwal-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/chandansemwal)
+[![GitHub](https://img.shields.io/badge/GitHub-XploitMonk0x01-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/XploitMonk0x01)
+[![Email](https://img.shields.io/badge/Email-ethicalrobo06@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ethicalrobo06@gmail.com)
+
+</div>
+
+---
+
+## `$ cat current_status.log`
+
+```yaml
+Name     : Chandan Singh
+Handle   : XploitMonk0x01
+Location : India
+Focus    : Malware RE · Memory Forensics · CTF Infrastructure
+Status   : Building XploitVerse · Open to internships
+Fun Fact : Released a Hindi-flavored compiler (merilang) the day of my Compiler Design exam
 ```
 
 ---
 
-## 🔥 SYSTEM.INIT()
+## `$ ls -la /arsenal/`
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**🔬 Reverse Engineering & Malware**
+```
+IDA Pro · Ghidra · x64dbg
+PEStudio · YARA · Binary Unpacking
+Shellcode Analysis · Code Deobfuscation
+x86/x64 Assembly · Crackme Analysis
+```
+
+**🕵️ Forensics & OSINT**
+```
+Volatility · Autopsy · Sleuth Kit
+Wireshark (PCAP) · Disk Imaging
+File Metadata Analysis · Artifact Recovery
+OSINT Investigation · EXIF Analysis
+```
+
+</td>
+<td valign="top" width="50%">
+
+**⚔️ Penetration Testing**
+```
+Burp Suite · Metasploit · Nmap · Hydra
+VAPT · OWASP Top 10
+Threat Modeling · Risk Assessment
+```
+
+**☁️ Cloud & Infrastructure**
+```
+AWS (IAM · CloudTrail · GuardDuty)
+GCP Security · Docker
+Kali Linux · Ubuntu · VirtualBox
+```
+
+**💻 Programming**
+```
+Python · C/C++ · Bash · JavaScript
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+## `$ cat /projects/active.json`
+
+### 🔴 [XploitVerse](https://github.com/XploitMonk0x01/XploitVerse) — *In Progress*
+> A full-scale cybersecurity learning platform modeled after HackTheBox/TryHackMe — but built from scratch.
+
+```
+Stack  : Node.js · Express · MongoDB · JWT (role-tiered: player / premium / admin)
+Covers : Web · Network · Binary Exploitation
+Notable: Immersive terminal-based CTF labs · Razorpay payment integration
+         Helmet security headers · Winston logging · Rate limiting
+```
+
+---
+
+## `$ cat certs.txt | grep -v expired`
+
+```
+[✓] Quick Heal Certified — Malware Essentials
+[✓] Quick Heal Certified — VAPT Analyst
+[✓] Quick Heal Certified — Network Security Analyst
+[✓] Quick Heal Certified — Mobile Application Penetration Testing Analyst
+[✓] Quick Heal Certified — Managing Cloud Infrastructure & Security Analyst
+[✓] Certified Network Security Practitioner (CNSP)
+```
+
+---
+
+## `$ ./stats --fetch`
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=XploitMonk0x01&show_icons=true&theme=transparent&hide_border=true&title_color=e05c5c&icon_color=e05c5c&text_color=c9d1d9&bg_color=0d1117)
+
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=XploitMonk0x01&theme=transparent&hide_border=true&ring=e05c5c&fire=e05c5c&currStreakLabel=e05c5c&background=0d1117&sideLabels=c9d1d9&dates=8b949e)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=XploitMonk0x01&layout=compact&theme=transparent&hide_border=true&title_color=e05c5c&text_color=c9d1d9&bg_color=0d1117)
+
+</div>
+
+---
+
+## `$ grep -r "currently_learning" /var/log/mindspace/`
 
 ```python
-class HackerProfile:
-    def __init__(self):
-        self.status = "ONLINE"
-        self.mode = "RECON_MODE"
-        self.specialty = ["Digital_Forensics", "Cloud_Security", "Penetration_Testing"]
-        self.current_objective = "Mastering AWS & GCP Security"
-        
-    def scan_interests(self):
-        return {
-            "🎯 PRIMARY_TARGET": "Cybersecurity Mastery",
-            "🔍 RECON_PHASE": "Digital Forensics & Cloud Security",
-            "🤝 COLLABORATION": "Open to joint CTF raids",
-            "📡 LEARNING_MODE": "Networking protocols & Security frameworks",
-            "⚡ EXPLOIT_CHAIN": "Pentesting → Ethical Hacking → Lab Scenarios"
-        }
+current_objective = [
+    "Advanced Malware Analysis (unpacking, obfuscation, C2 behaviour)",
+    "Reverse Engineering — anti-debug, packer internals, firmware RE",
+    "OSINT advanced techniques (GEOINT, sock puppets, graph pivoting)",
+    "DFIR — memory forensics, timeline analysis, IOC extraction",
+]
 ```
 
 ---
 
-## 🌐 NETWORK.CONNECT()
-
-```bash
-# Establish secure connections
-ssh root@linkedin.com/in/chandansemwal
-git clone https://github.com/XploitMonk0x01.git
-```
-
-[![SECURE_CHANNEL](https://img.shields.io/badge/LinkedIn-0xFF0000?style=flat-square&logo=linkedin&logoColor=white&labelColor=black)](https://linkedin.com/in/chandansemwal)
-[![REPO_ACCESS](https://img.shields.io/badge/GitHub-0xFF0000?style=flat-square&logo=github&logoColor=white&labelColor=black)](https://github.com/XploitMonk0x01)
-
----
-
-## ⚔️ ARSENAL.EXE
+<div align="center">
 
 ```
-┌──────────────────────────────────────────┐
-│             EXPLOITATION TOOLS            │
-├──────────────────────────────────────────┤
-│ [LANGUAGES]                              │
-│ ├─ C/C++        ████████████████ 100%    │
-│ ├─ Python       ████████████████ 100%    │
-│ └─ Bash         ████████████████ 100%    │
-│                                          │
-│ [HACKING_SUITE]                          │
-│ ├─ Kali Linux   ████████████████ 100%    │
-│ ├─ TryHackMe    ████████████████ 100%    │
-│ └─ Wireshark    ████████████████ 100%    │
-│                                          │
-│ [CLOUD_WARFARE]                          │
-│ ├─ AWS Security ██████████████▒▒ 80%     │
-│ └─ GCP Security ████████████▒▒▒▒ 70%     │
-│                                          │
-│ [DEV_ARSENAL]                            │
-│ ├─ Docker       ████████████████ 100%    │
-│ ├─ Git          ████████████████ 100%    │
-│ └─ VS Code      ████████████████ 100%    │
-└──────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────┐
+│  Open to: Internships · CTF Collabs · Research Roles │
+│  Reach me: ethicalrobo06@gmail.com                  │
+│  The terminal is always open.                       │
+└─────────────────────────────────────────────────────┘
 ```
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white&labelColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=black)
-![Python](https://img.shields.io/badge/Python-FF0000?style=for-the-badge&logo=python&logoColor=white&labelColor=black)
-![Bash](https://img.shields.io/badge/Bash-FF0000?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=black)
-![Kali](https://img.shields.io/badge/Kali_Linux-FF0000?style=for-the-badge&logo=kali-linux&logoColor=white&labelColor=black)
-![AWS](https://img.shields.io/badge/AWS-FF0000?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=black)
+*"The best exploit is the one they never patched."*
 
----
+![Profile Views](https://komarev.com/ghpvc/?username=XploitMonk0x01&color=e05c5c&style=flat-square&label=RECON+COUNT)
 
-## 📊 SURVEILLANCE.DATA()
-
-```
-╭─────────────────────── THREAT METRICS ───────────────────────╮
-│                                                               │
-```
-
-![](https://github-readme-stats.vercel.app/api?username=XploitMonk0x01&theme=dark&hide_border=true&include_all_commits=true&count_private=false&bg_color=0d1117&text_color=00ff00&icon_color=ff0000&title_color=ff0000)
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=XploitMonk0x01&theme=dark&hide_border=true&background=0d1117&ring=ff0000&fire=00ff00&currStreakLabel=00ff00)
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=XploitMonk0x01&theme=dark&hide_border=true&layout=compact&bg_color=0d1117&text_color=00ff00&title_color=ff0000)
-
-```
-│                                                               │
-╰───────────────────────────────────────────────────────────────╯
-```
-
----
-
-## 🏴‍☠️ ACHIEVEMENT.UNLOCKED()
-
-```
-┌─[TROPHIES_ACQUIRED]─[/var/log/achievements]
-└──╼ $ ls -la *.trophy
-```
-
-![](https://github-profile-trophy.vercel.app/?username=XploitMonk0x01&theme=onedark&no-frame=true&no-bg=true&margin-w=4&column=4)
-
----
-
-## 💀 HACKER.WISDOM()
-
-```bash
-#!/bin/bash
-while true; do
-    echo "$(curl -s https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)"
-    sleep 86400  # Daily wisdom injection
-done
-```
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true)
-
----
-
-```
-┌─[SYSTEM_MESSAGE]─[2025-09-14]─[ACTIVE]
-└──╼ $ echo "Access Granted. Welcome to the Matrix."
-
-    ██░ ██  ▄▄▄       ▄████▄   ██ ▄█▀▓█████  ██▀███  
-   ▓██░ ██▒▒████▄    ▒██▀ ▀█   ██▄█▒ ▓█   ▀ ▓██ ▒ ██▒
-   ▒██▀▀██░▒██  ▀█▄  ▒▓█    ▄ ▓███▄░ ▒███   ▓██ ░▄█ ▒
-   ░▓█ ░██ ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄ ▒▓█  ▄ ▒██▀▀█▄  
-   ░▓█▒░██▓ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄░▒████▒░██▓ ▒██▒
-    ▒ ░░▒░▒ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒░░ ▒░ ░░ ▒▓ ░▒▓░
-    ▒ ░▒░ ░  ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░ ░ ░  ░  ░▒ ░ ▒░
-    ░  ░░ ░  ░   ▒   ░        ░ ░░ ░    ░     ░░   ░ 
-    ░  ░  ░      ░  ░░ ░      ░  ░      ░  ░   ░     
-                     ░                               
-
-[MISSION]: Securing the digital realm, one exploit at a time 🔴
-[STATUS]: Ready for next infiltration...
-```
+</div>
