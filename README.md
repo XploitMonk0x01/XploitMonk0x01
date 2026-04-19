@@ -1,4 +1,5 @@
 <div align="center">
+
 ```
 ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ 
 ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
@@ -7,7 +8,7 @@
 ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 ```
- 
+
 ### `root@XploitMonk0x01 ~ $ cat whoami.txt`
 
 **Malware Analyst · Reverse Engineer · Digital Forensics Investigator**
