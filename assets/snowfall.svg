@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120">
+  <defs>
+    <style>
+      .flake { animation: fall linear infinite; opacity: 0; }
+      @keyframes fall {
+        0%   { transform: translateY(-10px) rotate(0deg);   opacity: 0; }
+        5%   { opacity: 0.85; }
+        90%  { opacity: 0.6; }
+        100% { transform: translateY(130px) rotate(360deg); opacity: 0; }
+      }
+      .leaf { animation: drift linear infinite; opacity: 0; }
+      @keyframes drift {
+        0%   { transform: translateY(-10px) translateX(0px) rotate(0deg);   opacity: 0; }
+        8%   { opacity: 0.7; }
+        50%  { transform: translateY(65px)  translateX(18px) rotate(180deg); opacity: 0.5; }
+        90%  { opacity: 0.4; }
+        100% { transform: translateY(130px) translateX(-10px) rotate(360deg); opacity: 0; }
+      }
+      .mist { animation: floatMist ease-in-out infinite alternate; }
+      @keyframes floatMist {
+        0%   { opacity: 0.06; transform: translateX(0px); }
+        100% { opacity: 0.14; transform: translateX(30px); }
+      }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020b14"/>
+      <stop offset="100%" stop-color="#04131f"/>
+    </linearGradient>
+    <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="blur5"><feGaussianBlur stdDeviation="5"/></filter>
+
+    <!-- Snowflake symbol -->
+    <g id="sf">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="white" stroke-width="1"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="white" stroke-width="1"/>
+      <line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" stroke="white" stroke-width="0.7"/>
+      <line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5" stroke="white" stroke-width="0.7"/>
+    </g>
+
+    <!-- Leaf symbol -->
+    <g id="lf">
+      <ellipse cx="0" cy="0" rx="4" ry="2" fill="#2d6a4f" opacity="0.8"/>
+      <line x1="-3" y1="0" x2="3" y2="0" stroke="#1b4332" stroke-width="0.5"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="120" fill="url(#bg)"/>
+
+  <!-- Mist / fog layers -->
+  <ellipse class="mist" cx="200" cy="90" rx="250" ry="35" fill="#00e5cc" filter="url(#blur5)" style="animation-duration:7s"/>
+  <ellipse class="mist" cx="700" cy="85" rx="300" ry="30" fill="#0077aa" filter="url(#blur5)" style="animation-duration:9s;animation-delay:-3s"/>
+  <ellipse class="mist" cx="1050" cy="95" rx="200" ry="28" fill="#00b4d8" filter="url(#blur5)" style="animation-duration:6s;animation-delay:-5s"/>
+
+  <!-- Mountain silhouettes (layered) -->
+  <polygon points="0,120 70,55 140,120 230,40 320,110 410,50 500,120 580,45 660,110 750,38 840,108 930,48 1010,115 1100,42 1200,80 1200,120" fill="#0a1e30" opacity="0.9"/>
+  <polygon points="0,120 40,72 90,120 160,60 250,118 340,65 430,120 510,58 600,115 680,52 760,118 850,60 940,120 1020,55 1110,118 1200,65 1200,120" fill="#061420" opacity="1"/>
+
+  <!-- Snow on mountain peaks -->
+  <polygon points="70,55 80,70 60,70" fill="#cce8f0" opacity="0.7"/>
+  <polygon points="230,40 244,60 216,60" fill="#ddf2ff" opacity="0.75"/>
+  <polygon points="410,50 424,70 396,70" fill="#cce8f0" opacity="0.7"/>
+  <polygon points="580,45 594,66 566,66" fill="#ddf2ff" opacity="0.75"/>
+  <polygon points="750,38 765,60 735,60" fill="#cce8f0" opacity="0.8"/>
+  <polygon points="930,48 944,68 916,68" fill="#ddf2ff" opacity="0.7"/>
+  <polygon points="1100,42 1115,63 1085,63" fill="#cce8f0" opacity="0.75"/>
+
+  <!-- Pine trees foreground -->
+  <g fill="#030e18">
+    <polygon points="0,120 10,92 20,120"/>
+    <polygon points="12,120 23,80 34,120"/>
+    <polygon points="28,120 38,88 48,120"/>
+    <polygon points="100,120 110,85 120,120"/>
+    <polygon points="112,120 123,75 134,120"/>
+    <polygon points="280,120 290,82 300,120"/>
+    <polygon points="295,120 306,88 317,120"/>
+    <polygon points="480,120 490,79 500,120"/>
+    <polygon points="493,120 504,86 515,120"/>
+    <polygon points="660,120 670,83 680,120"/>
+    <polygon points="674,120 685,76 696,120"/>
+    <polygon points="840,120 850,80 860,120"/>
+    <polygon points="854,120 865,88 876,120"/>
+    <polygon points="1020,120 1030,82 1040,120"/>
+    <polygon points="1034,120 1045,74 1056,120"/>
+    <polygon points="1160,120 1170,84 1180,120"/>
+    <polygon points="1174,120 1185,77 1196,120"/>
+  </g>
+
+  <!-- Glacial river glow at base -->
+  <path d="M0,112 Q200,104 400,110 Q600,116 800,108 Q1000,102 1200,109" stroke="#00e5cc" stroke-width="3" fill="none" filter="url(#blur2)" opacity="0.6"/>
+  <path d="M0,112 Q200,104 400,110 Q600,116 800,108 Q1000,102 1200,109" stroke="#80fff0" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- ─── SNOWFLAKES ─── -->
+  <!-- Each has unique position, size, duration, delay -->
+  <use href="#sf" class="flake" transform="translate(30,0) scale(0.5)"   style="animation-duration:4.1s; animation-delay:0s"/>
+  <use href="#sf" class="flake" transform="translate(90,0) scale(0.8)"   style="animation-duration:5.3s; animation-delay:-1.2s"/>
+  <use href="#sf" class="flake" transform="translate(160,0) scale(0.6)"  style="animation-duration:3.8s; animation-delay:-0.5s"/>
+  <use href="#sf" class="flake" transform="translate(240,0) scale(1.0)"  style="animation-duration:6.1s; animation-delay:-2.1s"/>
+  <use href="#sf" class="flake" transform="translate(310,0) scale(0.5)"  style="animation-duration:4.5s; animation-delay:-0.8s"/>
+  <use href="#sf" class="flake" transform="translate(380,0) scale(0.9)"  style="animation-duration:5.8s; animation-delay:-3.0s"/>
+  <use href="#sf" class="flake" transform="translate(450,0) scale(0.6)"  style="animation-duration:3.5s; animation-delay:-1.5s"/>
+  <use href="#sf" class="flake" transform="translate(520,0) scale(0.75)" style="animation-duration:4.9s; animation-delay:-0.2s"/>
+  <use href="#sf" class="flake" transform="translate(590,0) scale(1.1)"  style="animation-duration:6.4s; animation-delay:-2.7s"/>
+  <use href="#sf" class="flake" transform="translate(660,0) scale(0.5)"  style="animation-duration:3.9s; animation-delay:-1.0s"/>
+  <use href="#sf" class="flake" transform="translate(730,0) scale(0.8)"  style="animation-duration:5.1s; animation-delay:-3.5s"/>
+  <use href="#sf" class="flake" transform="translate(800,0) scale(0.65)" style="animation-duration:4.2s; animation-delay:-0.6s"/>
+  <use href="#sf" class="flake" transform="translate(870,0) scale(0.9)"  style="animation-duration:5.6s; animation-delay:-2.3s"/>
+  <use href="#sf" class="flake" transform="translate(940,0) scale(0.55)" style="animation-duration:3.7s; animation-delay:-1.8s"/>
+  <use href="#sf" class="flake" transform="translate(1010,0) scale(1.0)" style="animation-duration:6.0s; animation-delay:-0.9s"/>
+  <use href="#sf" class="flake" transform="translate(1080,0) scale(0.7)" style="animation-duration:4.6s; animation-delay:-3.2s"/>
+  <use href="#sf" class="flake" transform="translate(1150,0) scale(0.8)" style="animation-duration:5.2s; animation-delay:-1.4s"/>
+  <!-- Second staggered row -->
+  <use href="#sf" class="flake" transform="translate(55,0) scale(0.6)"   style="animation-duration:5.5s; animation-delay:-2.5s"/>
+  <use href="#sf" class="flake" transform="translate(125,0) scale(0.45)" style="animation-duration:4.0s; animation-delay:-0.3s"/>
+  <use href="#sf" class="flake" transform="translate(200,0) scale(0.85)" style="animation-duration:6.2s; animation-delay:-3.8s"/>
+  <use href="#sf" class="flake" transform="translate(275,0) scale(0.55)" style="animation-duration:3.6s; animation-delay:-1.1s"/>
+  <use href="#sf" class="flake" transform="translate(345,0) scale(0.9)"  style="animation-duration:5.0s; animation-delay:-2.0s"/>
+  <use href="#sf" class="flake" transform="translate(415,0) scale(0.65)" style="animation-duration:4.3s; animation-delay:-0.7s"/>
+  <use href="#sf" class="flake" transform="translate(485,0) scale(1.05)" style="animation-duration:6.6s; animation-delay:-3.3s"/>
+  <use href="#sf" class="flake" transform="translate(555,0) scale(0.5)"  style="animation-duration:3.8s; animation-delay:-1.6s"/>
+  <use href="#sf" class="flake" transform="translate(625,0) scale(0.75)" style="animation-duration:5.3s; animation-delay:-2.8s"/>
+  <use href="#sf" class="flake" transform="translate(695,0) scale(0.9)"  style="animation-duration:4.7s; animation-delay:-0.4s"/>
+  <use href="#sf" class="flake" transform="translate(765,0) scale(0.55)" style="animation-duration:5.9s; animation-delay:-1.9s"/>
+  <use href="#sf" class="flake" transform="translate(835,0) scale(0.8)"  style="animation-duration:3.4s; animation-delay:-3.1s"/>
+  <use href="#sf" class="flake" transform="translate(905,0) scale(1.0)"  style="animation-duration:6.3s; animation-delay:-0.5s"/>
+  <use href="#sf" class="flake" transform="translate(975,0) scale(0.6)"  style="animation-duration:4.4s; animation-delay:-2.4s"/>
+  <use href="#sf" class="flake" transform="translate(1045,0) scale(0.85)" style="animation-duration:5.7s; animation-delay:-1.3s"/>
+  <use href="#sf" class="flake" transform="translate(1115,0) scale(0.5)"  style="animation-duration:3.9s; animation-delay:-3.6s"/>
+  <use href="#sf" class="flake" transform="translate(1185,0) scale(0.7)"  style="animation-duration:5.4s; animation-delay:-0.8s"/>
+
+  <!-- ─── FALLING LEAVES ─── -->
+  <use href="#lf" class="leaf" transform="translate(70,0)"   style="animation-duration:7.2s; animation-delay:-1.0s"/>
+  <use href="#lf" class="leaf" transform="translate(220,0)"  style="animation-duration:6.5s; animation-delay:-2.5s"/>
+  <use href="#lf" class="leaf" transform="translate(400,0)"  style="animation-duration:8.1s; animation-delay:-0.3s"/>
+  <use href="#lf" class="leaf" transform="translate(570,0)"  style="animation-duration:7.6s; animation-delay:-3.8s"/>
+  <use href="#lf" class="leaf" transform="translate(750,0)"  style="animation-duration:6.9s; animation-delay:-1.7s"/>
+  <use href="#lf" class="leaf" transform="translate(920,0)"  style="animation-duration:8.4s; animation-delay:-2.1s"/>
+  <use href="#lf" class="leaf" transform="translate(1100,0)" style="animation-duration:7.0s; animation-delay:-0.9s"/>
+</svg>

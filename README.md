@@ -19,7 +19,7 @@
 
 > *Malware Analyst · Reverse Engineer · Digital Forensics Investigator*
 > 
-> *B.Tech CSE (Quick Heal Specialization) · Parul University · 6th Semester*
+> *B.Tech CSE (Quick Heal Specialization) · Parul University · 7th Semester*
 
 <br/>
 
@@ -56,51 +56,12 @@ Fun Fact : Released a Hindi-flavored compiler (merilang) on my Compiler Design e
 
 ## `🌲 $ ls -la /summit/arsenal/`
 
-<table>
-<tr>
-<td valign="top" width="50%">
+<div align="center">
 
-### 🔬 Reverse Engineering & Malware Analysis
-```
-IDA Pro    ·  Ghidra    ·  x64dbg
-PEStudio   ·  YARA      ·  Binary Unpacking
-Shellcode Analysis     ·  Code Deobfuscation
-x86/x64 Assembly       ·  Crackme Analysis
-```
+<!-- Animated Skill Tree — each branch = a skill category, each node = a tool -->
+<img src="./assets/skill_tree.svg" alt="Skill Tree" width="100%"/>
 
-### 🕵️ Forensics & OSINT
-```
-Volatility  ·  Autopsy     ·  Sleuth Kit
-Wireshark (PCAP)  ·  Disk Imaging
-File Metadata Analysis · Artifact Recovery
-OSINT Investigation  ·  EXIF Analysis
-```
-
-</td>
-<td valign="top" width="50%">
-
-### ⚔️ Penetration Testing
-```
-Burp Suite   ·  Metasploit  ·  Nmap  ·  Hydra
-VAPT   ·  OWASP Top 10
-Threat Modeling  ·  Risk Assessment
-```
-
-### ☁️ Cloud & Infrastructure
-```
-AWS  (IAM · CloudTrail · GuardDuty)
-GCP Security  ·  Docker
-Kali Linux  ·  Ubuntu  ·  VirtualBox
-```
-
-### 💻 Programming
-```
-Python  ·  C/C++  ·  Bash  ·  JavaScript
-```
-
-</td>
-</tr>
-</table>
+</div>
 
 <img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
 
@@ -204,6 +165,12 @@ next_summit = [
 </picture>
 
 </div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--               ANIMATED SNOWFALL / NATURE OVERLAY               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<img src="./assets/snowfall.svg" alt="Snowfall over the mountains" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--                      MOUNTAIN FOOTER                           -->
