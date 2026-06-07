@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03090f"/>
+      <stop offset="100%" stop-color="#0a1a2e"/>
+    </linearGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#00e5cc" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#00bfff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7f00ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glacierRiver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00e5cc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#007acc" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="120" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="50" cy="15" r="0.7" fill="white" opacity="0.8"/>
+  <circle cx="180" cy="8" r="0.9" fill="white" opacity="0.6"/>
+  <circle cx="350" cy="20" r="0.6" fill="white" opacity="0.7"/>
+  <circle cx="600" cy="5" r="0.8" fill="white" opacity="0.9"/>
+  <circle cx="850" cy="18" r="0.7" fill="white" opacity="0.6"/>
+  <circle cx="1050" cy="10" r="0.9" fill="white" opacity="0.8"/>
+
+  <!-- Aurora glow -->
+  <path d="M0,35 Q300,10 600,30 Q900,50 1200,25" stroke="url(#aurora)" stroke-width="20" fill="none" filter="url(#glow)" opacity="0.5"/>
+  <path d="M0,35 Q300,10 600,30 Q900,50 1200,25" stroke="#00e5cc" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Distant mountains -->
+  <polygon points="0,90 60,55 120,90 200,45 280,85 360,50 440,90 520,42 600,88 680,48 760,85 840,52 920,90 1000,45 1080,88 1160,55 1200,70 1200,90" fill="#0d1f35" opacity="0.8"/>
+
+  <!-- Foreground forest footer -->
+  <g fill="#04111e">
+    <polygon points="0,120 14,88 28,120"/>
+    <polygon points="18,120 33,78 48,120"/>
+    <polygon points="38,120 52,85 66,120"/>
+    <polygon points="120,120 134,80 148,120"/>
+    <polygon points="140,120 154,72 168,120"/>
+    <polygon points="280,120 294,82 308,120"/>
+    <polygon points="300,120 314,75 328,120"/>
+    <polygon points="500,120 514,78 528,120"/>
+    <polygon points="520,120 534,86 548,120"/>
+    <polygon points="700,120 714,75 728,120"/>
+    <polygon points="720,120 734,83 748,120"/>
+    <polygon points="880,120 894,79 908,120"/>
+    <polygon points="900,120 914,70 928,120"/>
+    <polygon points="1050,120 1064,80 1078,120"/>
+    <polygon points="1070,120 1084,72 1098,120"/>
+    <polygon points="1150,120 1164,82 1178,120"/>
+    <polygon points="1170,120 1184,76 1198,120"/>
+  </g>
+
+  <!-- Glacier river running at base -->
+  <path d="M0,108 Q150,100 300,106 Q450,112 600,104 Q750,98 900,105 Q1050,110 1200,103" stroke="url(#glacierRiver)" stroke-width="4" fill="none" filter="url(#softGlow)"/>
+  <path d="M0,108 Q150,100 300,106 Q450,112 600,104 Q750,98 900,105 Q1050,110 1200,103" stroke="#00ffcc" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="1200" height="60">
+  <defs>
+    <linearGradient id="riverFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a1628" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#005f73"/>
+      <stop offset="35%" stop-color="#00b4d8"/>
+      <stop offset="50%" stop-color="#00e5cc"/>
+      <stop offset="65%" stop-color="#00b4d8"/>
+      <stop offset="85%" stop-color="#005f73"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#040d18"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="60" fill="url(#bg)"/>
+  
+  <!-- River waves -->
+  <path d="M0,30 Q100,18 200,30 Q300,42 400,30 Q500,18 600,30 Q700,42 800,30 Q900,18 1000,30 Q1100,42 1200,30" stroke="url(#riverFlow)" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M0,30 Q100,18 200,30 Q300,42 400,30 Q500,18 600,30 Q700,42 800,30 Q900,18 1000,30 Q1100,42 1200,30" stroke="url(#riverFlow)" stroke-width="6" fill="none" filter="url(#glow)" opacity="0.7"/>
+  <path d="M0,35 Q120,23 240,35 Q360,47 480,35 Q600,23 720,35 Q840,47 960,35 Q1080,23 1200,35" stroke="#00e5cc" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Small mountain silhouettes -->
+  <g fill="#0d1f30" opacity="0.7">
+    <polygon points="0,60 30,35 60,60"/>
+    <polygon points="45,60 80,28 115,60"/>
+    <polygon points="100,60 125,38 150,60"/>
+    <polygon points="250,60 285,30 320,60"/>
+    <polygon points="300,60 330,40 360,60"/>
+    <polygon points="500,60 535,28 570,60"/>
+    <polygon points="750,60 785,32 820,60"/>
+    <polygon points="800,60 830,42 860,60"/>
+    <polygon points="950,60 980,30 1010,60"/>
+    <polygon points="1090,60 1125,35 1160,60"/>
+    <polygon points="1140,60 1165,42 1190,60"/>
+  </g>
+
+  <!-- Pine trees -->
+  <g fill="#091520">
+    <polygon points="170,60 178,42 186,60"/>
+    <polygon points="182,60 190,36 198,60"/>
+    <polygon points="400,60 408,40 416,60"/>
+    <polygon points="650,60 658,38 666,60"/>
+    <polygon points="662,60 670,44 678,60"/>
+    <polygon points="880,60 888,39 896,60"/>
+    <polygon points="1020,60 1028,41 1036,60"/>
+  </g>
+</svg>

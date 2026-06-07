@@ -1,95 +1,118 @@
 <div align="center">
 
-```
-██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ 
-██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
-███████║███████║██║     █████╔╝ █████╗  ██████╔╝
-██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
-██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-```
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                    MOUNTAIN HEADER BANNER                      -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-### `root@XploitMonk0x01 ~ $ cat whoami.txt`
+<img src="./assets/mountain_header.svg" alt="Aurora over the mountains" width="100%"/>
 
-**Malware Analyst · Reverse Engineer · Digital Forensics Investigator**
+<br/>
 
-*B.Tech CSE (Quick Heal Specialization) · Parul University · 6th Semester*
+<!-- Animated name badge -->
+<a href="https://github.com/XploitMonk0x01">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1000&color=00E5CC&center=true&vCenter=true&width=600&lines=XploitMonk0x01;Malware+Analyst+%7C+RE+%7C+DFIR;Exploring+the+Summit+of+Security" alt="Typing SVG" />
+</a>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-chandansemwal-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/chandansemwal)
-[![GitHub](https://img.shields.io/badge/GitHub-XploitMonk0x01-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/XploitMonk0x01)
-[![Email](https://img.shields.io/badge/Email-ethicalrobo06@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ethicalrobo06@gmail.com)
+<br/>
+
+**`root@XploitMonk0x01 ~ $ cat whoami.txt`**
+
+> *Malware Analyst · Reverse Engineer · Digital Forensics Investigator*
+> 
+> *B.Tech CSE (Quick Heal Specialization) · Parul University · 6th Semester*
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-chandansemwal-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chandansemwal)
+[![GitHub](https://img.shields.io/badge/GitHub-XploitMonk0x01-00E5CC?style=for-the-badge&logo=github&logoColor=black)](https://github.com/XploitMonk0x01)
+[![Email](https://img.shields.io/badge/Email-ethicalrobo06%40gmail.com-4a9eff?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ethicalrobo06@gmail.com)
 
 </div>
 
----
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
 
-## `$ cat current_status.log`
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                    CURRENT STATUS                              -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `🏔️ $ cat base_camp.log`
 
 ```yaml
 Name     : Chandan Singh
 Handle   : XploitMonk0x01
-Location : India
+Location : India  🌏
 Focus    : Malware RE · Memory Forensics · CTF Infrastructure
 Status   : Building XploitVerse · Open to internships
-Fun Fact : Released a Hindi-flavored compiler (merilang) the day of my Compiler Design exam
+Fun Fact : Released a Hindi-flavored compiler (merilang) on my Compiler Design exam day
 ```
 
----
+> *"Like a glacier that carves mountains, persistence shapes mastery."*
 
-## `$ ls -la /arsenal/`
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      THE ARSENAL                               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `🌲 $ ls -la /summit/arsenal/`
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-**🔬 Reverse Engineering & Malware**
+### 🔬 Reverse Engineering & Malware Analysis
 ```
-IDA Pro · Ghidra · x64dbg
-PEStudio · YARA · Binary Unpacking
-Shellcode Analysis · Code Deobfuscation
-x86/x64 Assembly · Crackme Analysis
+IDA Pro    ·  Ghidra    ·  x64dbg
+PEStudio   ·  YARA      ·  Binary Unpacking
+Shellcode Analysis     ·  Code Deobfuscation
+x86/x64 Assembly       ·  Crackme Analysis
 ```
 
-**🕵️ Forensics & OSINT**
+### 🕵️ Forensics & OSINT
 ```
-Volatility · Autopsy · Sleuth Kit
-Wireshark (PCAP) · Disk Imaging
+Volatility  ·  Autopsy     ·  Sleuth Kit
+Wireshark (PCAP)  ·  Disk Imaging
 File Metadata Analysis · Artifact Recovery
-OSINT Investigation · EXIF Analysis
+OSINT Investigation  ·  EXIF Analysis
 ```
 
 </td>
 <td valign="top" width="50%">
 
-**⚔️ Penetration Testing**
+### ⚔️ Penetration Testing
 ```
-Burp Suite · Metasploit · Nmap · Hydra
-VAPT · OWASP Top 10
-Threat Modeling · Risk Assessment
-```
-
-**☁️ Cloud & Infrastructure**
-```
-AWS (IAM · CloudTrail · GuardDuty)
-GCP Security · Docker
-Kali Linux · Ubuntu · VirtualBox
+Burp Suite   ·  Metasploit  ·  Nmap  ·  Hydra
+VAPT   ·  OWASP Top 10
+Threat Modeling  ·  Risk Assessment
 ```
 
-**💻 Programming**
+### ☁️ Cloud & Infrastructure
 ```
-Python · C/C++ · Bash · JavaScript
+AWS  (IAM · CloudTrail · GuardDuty)
+GCP Security  ·  Docker
+Kali Linux  ·  Ubuntu  ·  VirtualBox
+```
+
+### 💻 Programming
+```
+Python  ·  C/C++  ·  Bash  ·  JavaScript
 ```
 
 </td>
 </tr>
 </table>
 
----
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
 
-## `$ cat /projects/active.json`
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      ACTIVE PROJECTS                           -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-### 🔴 [XploitVerse](https://github.com/XploitMonk0x01/XploitVerse) — *In Progress*
-> A full-scale cybersecurity learning platform modeled after HackTheBox/TryHackMe — but built from scratch.
+## `🏔️ $ cat /expeditions/active.json`
+
+### 🔴 [XploitVerse](https://github.com/XploitMonk0x01/XploitVerse) — *Ascending*
+
+> A full-scale cybersecurity learning platform — carved from the raw stone, like HackTheBox but built from scratch.
 
 ```
 Stack  : Node.js · Express · MongoDB · JWT (role-tiered: player / premium / admin)
@@ -98,60 +121,110 @@ Notable: Immersive terminal-based CTF labs · Razorpay payment integration
          Helmet security headers · Winston logging · Rate limiting
 ```
 
----
-
-## `$ cat certs.txt | grep -v expired`
-
-```
-[✓] Quick Heal Certified — Malware Essentials
-[✓] Quick Heal Certified — VAPT Analyst
-[✓] Quick Heal Certified — Network Security Analyst
-[✓] Quick Heal Certified — Mobile Application Penetration Testing Analyst
-[✓] Quick Heal Certified — Managing Cloud Infrastructure & Security Analyst
-[✓] Certified Network Security Practitioner (CNSP)
-```
-
----
-
-## `$ ./stats --fetch`
-
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=XploitMonk0x01&show_icons=true&theme=transparent&hide_border=true&title_color=e05c5c&icon_color=e05c5c&text_color=c9d1d9&bg_color=0d1117)
-
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=XploitMonk0x01&theme=transparent&hide_border=true&ring=e05c5c&fire=e05c5c&currStreakLabel=e05c5c&background=0d1117&sideLabels=c9d1d9&dates=8b949e)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=XploitMonk0x01&layout=compact&theme=transparent&hide_border=true&title_color=e05c5c&text_color=c9d1d9&bg_color=0d1117)
+![XploitVerse Progress](https://img.shields.io/badge/XploitVerse-In%20Progress-00E5CC?style=for-the-badge&logo=target&logoColor=black)
+![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20MongoDB-3c873a?style=for-the-badge&logo=node.js&logoColor=white)
 
 </div>
 
----
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
 
-## `$ grep -r "currently_learning" /var/log/mindspace/`
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      CERTIFICATIONS                            -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `🎖️ $ cat peak_achievements.txt`
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│  [✓]  Quick Heal Certified — Malware Essentials                  │
+│  [✓]  Quick Heal Certified — VAPT Analyst                        │
+│  [✓]  Quick Heal Certified — Network Security Analyst            │
+│  [✓]  Quick Heal Certified — Mobile App Penetration Testing      │
+│  [✓]  Quick Heal Certified — Cloud Infrastructure & Security     │
+│  [✓]  Certified Network Security Practitioner (CNSP)             │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      GITHUB STATS                              -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `📊 $ ./altimeter --fetch`
+
+<div align="center">
+
+<!-- GitHub Stats ✅ github-readme-stats-fast.vercel.app -->
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=XploitMonk0x01&show_icons=true&hide_border=true&title_color=00E5CC&icon_color=00b4d8&text_color=c9d1d9&bg_color=030d18&theme=radical)
+
+<!-- Streak Stats ✅ github-readme-stats-fast.vercel.app -->
+![GitHub Streak](https://github-readme-stats-fast.vercel.app/api/streak?username=XploitMonk0x01&hide_border=true&ring=00E5CC&fire=00b4d8&currStreakLabel=00E5CC&background=030d18&sideLabels=c9d1d9&dates=8b949e&theme=radical)
+
+<!-- Top Languages ✅ github-readme-stats-fast.vercel.app -->
+![Top Langs](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=XploitMonk0x01&layout=compact&hide_border=true&title_color=00E5CC&text_color=c9d1d9&bg_color=030d18&theme=radical)
+
+</div>
+
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      LEARNING TRAIL                            -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `🌿 $ grep -r "next_summit" /var/log/mindspace/`
 
 ```python
-current_objective = [
+next_summit = [
     "Advanced Malware Analysis (unpacking, obfuscation, C2 behaviour)",
     "Reverse Engineering — anti-debug, packer internals, firmware RE",
     "OSINT advanced techniques (GEOINT, sock puppets, graph pivoting)",
     "DFIR — memory forensics, timeline analysis, IOC extraction",
 ]
+
+# Every trail, no matter how steep, leads to a better view.
 ```
 
----
+<img src="./assets/river_divider.svg" alt="Glacial River" width="100%"/>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      CONTRIBUTION SNAKE                        -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## `🐍 $ watch -n 86400 contribution_trail.sh`
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XploitMonk0x01/XploitMonk0x01/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XploitMonk0x01/XploitMonk0x01/output/github-contribution-grid-snake.svg">
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/XploitMonk0x01/XploitMonk0x01/output/github-contribution-grid-snake-dark.svg" width="100%">
+</picture>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      MOUNTAIN FOOTER                           -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+<img src="./assets/mountain_footer.svg" alt="Mountains and Forest" width="100%"/>
 
 <div align="center">
 
 ```
-┌─────────────────────────────────────────────────────┐
-│  Open to: Internships · CTF Collabs · Research Roles │
-│  Reach me: ethicalrobo06@gmail.com                  │
-│  The terminal is always open.                       │
-└─────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│  🏔️  Open to: Internships · CTF Collabs · Research Roles        │
+│  🌊  Reach me: ethicalrobo06@gmail.com                           │
+│  🌲  The terminal is always open. The summit awaits.             │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
-*"The best exploit is the one they never patched."*
+*"The mountains are calling, and I must go — but first, I'll reverse engineer the trail map."*
 
-![Profile Views](https://komarev.com/ghpvc/?username=XploitMonk0x01&color=e05c5c&style=flat-square&label=RECON+COUNT)
+<br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=XploitMonk0x01&color=00E5CC&style=for-the-badge&label=EXPLORERS+COUNT)
 
 </div>
