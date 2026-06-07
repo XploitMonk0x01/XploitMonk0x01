@@ -19,7 +19,7 @@
 
 > *Malware Analyst · Reverse Engineer · Digital Forensics Investigator*
 > 
-> *B.Tech CSE (Quick Heal Specialization) · Parul University · 6th Semester*
+> *B.Tech CSE (Quick Heal Specialization) · Parul University · 7th Semester*
 
 <br/>
 
