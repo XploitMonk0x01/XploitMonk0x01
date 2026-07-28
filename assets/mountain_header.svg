@@ -1,181 +1,335 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="XploitMonk0x01 — Alpine Expedition Journal">
   <defs>
-    <!-- Sky gradient -->
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0015"/>
-      <stop offset="40%" stop-color="#0d0a2e"/>
-      <stop offset="100%" stop-color="#0a1a2e"/>
+      <stop offset="0%"   stop-color="#03060d"/>
+      <stop offset="40%"  stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#0a1a30"/>
     </linearGradient>
-    <!-- Aurora gradient 1 -->
-    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00ff88" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#00e5cc" stop-opacity="0.5"/>
-      <stop offset="60%" stop-color="#00bfff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#8b00ff" stop-opacity="0"/>
+    <linearGradient id="mw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1a2a4a" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#2a3a60" stop-opacity="0.35"/>
+      <stop offset="60%"  stop-color="#1e3055" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#08111f" stop-opacity="0"/>
     </linearGradient>
-    <!-- Aurora gradient 2 -->
-    <linearGradient id="aurora2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7f00ff" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#00e5cc" stop-opacity="0.35"/>
-      <stop offset="55%" stop-color="#00ff88" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#00bfff" stop-opacity="0"/>
+    <linearGradient id="au1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00e5cc" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#00e5cc" stop-opacity="0.55"/>
+      <stop offset="55%"  stop-color="#4cc9f0" stop-opacity="0.5"/>
+      <stop offset="80%"  stop-color="#00ff88" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00e5cc" stop-opacity="0"/>
     </linearGradient>
-    <!-- Glacier glow -->
-    <linearGradient id="glacier" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#a0e8ff"/>
-      <stop offset="100%" stop-color="#5bc8e8"/>
+    <linearGradient id="au2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#7f00ff" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#4cc9f0" stop-opacity="0.3"/>
+      <stop offset="50%"  stop-color="#00e5cc" stop-opacity="0.4"/>
+      <stop offset="75%"  stop-color="#00ff88" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7f00ff" stop-opacity="0"/>
     </linearGradient>
-    <!-- River gradient -->
-    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00e5cc" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0077aa" stop-opacity="0.8"/>
+    <linearGradient id="au3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#00ff88" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#00ff88" stop-opacity="0.25"/>
+      <stop offset="60%"  stop-color="#00e5cc" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
     </linearGradient>
-    <!-- Snow gradient -->
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0d2a42" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#04111e" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ff9f43" stop-opacity="0.9"/>
+      <stop offset="40%"  stop-color="#ff6b2b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00e5cc" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00e5cc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#eaf2ff" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#c8e4ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4cc9f0"  stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#dff6ff"/>
-      <stop offset="100%" stop-color="#8dc8e0" stop-opacity="0.6"/>
+      <stop offset="0%"   stop-color="#eaf2ff"/>
+      <stop offset="100%" stop-color="#a0c8e0" stop-opacity="0.5"/>
     </linearGradient>
-    <!-- Glow filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <linearGradient id="pageFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#08111f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08111f" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="auroraBlur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
     </filter>
-    <filter id="auroraGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="riverGlow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="fireBlur">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="moonBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <style>
+      .star-tw  { animation: starTw  3.2s ease-in-out infinite alternate; }
+      .star-tw2 { animation: starTw  4.8s ease-in-out infinite alternate; }
+      .star-tw3 { animation: starTw  2.6s ease-in-out infinite alternate; }
+      .star-tw4 { animation: starTw  5.5s ease-in-out infinite alternate; }
+      @keyframes starTw { from { opacity: 0.2; } to { opacity: 1.0; } }
+      .aurora  { animation: auroraPulse 8s   ease-in-out infinite alternate; }
+      .aurora2 { animation: auroraPulse 11s  ease-in-out infinite alternate; }
+      .aurora3 { animation: auroraPulse 6.5s ease-in-out infinite alternate; }
+      @keyframes auroraPulse {
+        0%   { opacity: 0.35; transform: translateY(0px)  scaleY(1);    }
+        50%  { opacity: 0.7;  transform: translateY(-4px) scaleY(1.04); }
+        100% { opacity: 0.45; transform: translateY(2px)  scaleY(0.96); }
+      }
+      .fire-flicker { animation: fireFlicker 0.18s ease-in-out infinite alternate; }
+      @keyframes fireFlicker {
+        from { opacity: 0.7; transform: scaleX(0.9) scaleY(1.05) translateY(0); }
+        to   { opacity: 1.0; transform: scaleX(1.1) scaleY(0.95) translateY(-1px); }
+      }
+      .fire-glow { animation: fireGlowPulse 0.35s ease-in-out infinite alternate; }
+      @keyframes fireGlowPulse { from{opacity:0.4} to{opacity:0.8} }
+      .smoke  { animation: smokeRise 3s ease-out infinite; }
+      .smoke2 { animation: smokeRise 3.8s ease-out 1.2s infinite; }
+      .smoke3 { animation: smokeRise 2.8s ease-out 0.6s infinite; }
+      @keyframes smokeRise {
+        0%   { transform: translateY(0) translateX(0) scale(0.4); opacity: 0.6; }
+        60%  { opacity: 0.25; }
+        100% { transform: translateY(-45px) translateX(8px) scale(1.4); opacity: 0; }
+      }
+      .snow-fall  { animation: snowFall 7s  linear 0s infinite; }
+      .snow-fall2 { animation: snowFall 9s  linear 2s infinite; }
+      .snow-fall3 { animation: snowFall 6s  linear 4s infinite; }
+      .snow-fall4 { animation: snowFall 8s  linear 1s infinite; }
+      .snow-fall5 { animation: snowFall 10s linear 3s infinite; }
+      @keyframes snowFall {
+        0%   { transform: translateY(-20px) translateX(0); opacity:0; }
+        10%  { opacity:0.8; }
+        90%  { opacity:0.5; }
+        100% { transform: translateY(400px) translateX(20px); opacity:0; }
+      }
+      .cursor-blink { animation: cursorBlink 1.1s step-end infinite; }
+      @keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+      .laptop-glow { animation: laptopPulse 3.5s ease-in-out infinite alternate; }
+      @keyframes laptopPulse { from{opacity:0.5} to{opacity:0.9} }
+      .cloud-drift  { animation: cloudDrift  22s linear infinite; }
+      .cloud-drift2 { animation: cloudDrift2 30s linear infinite; }
+      @keyframes cloudDrift  { from{transform:translateX(-80px)} to{transform:translateX(80px)}  }
+      @keyframes cloudDrift2 { from{transform:translateX(60px)}  to{transform:translateX(-60px)} }
+    </style>
   </defs>
 
-  <!-- Sky background -->
-  <rect width="1200" height="280" fill="url(#sky)"/>
+  <rect width="1200" height="380" fill="url(#sky)"/>
+  <ellipse cx="500" cy="140" rx="520" ry="85" fill="url(#mw)" opacity="0.55" transform="rotate(-18,500,140)"/>
 
-  <!-- Stars -->
-  <g opacity="0.8">
-    <circle cx="50" cy="20" r="0.8" fill="white" opacity="0.9"/>
-    <circle cx="120" cy="35" r="1" fill="white" opacity="0.7"/>
-    <circle cx="200" cy="15" r="0.7" fill="white" opacity="0.8"/>
-    <circle cx="310" cy="28" r="0.9" fill="white" opacity="0.6"/>
-    <circle cx="390" cy="12" r="0.8" fill="white" opacity="0.9"/>
-    <circle cx="450" cy="40" r="0.6" fill="white" opacity="0.7"/>
-    <circle cx="520" cy="18" r="1.1" fill="white" opacity="0.8"/>
-    <circle cx="600" cy="8" r="0.7" fill="white" opacity="0.6"/>
-    <circle cx="680" cy="30" r="0.9" fill="white" opacity="0.9"/>
-    <circle cx="750" cy="15" r="0.8" fill="white" opacity="0.7"/>
-    <circle cx="830" cy="25" r="0.6" fill="white" opacity="0.8"/>
-    <circle cx="910" cy="10" r="1" fill="white" opacity="0.6"/>
-    <circle cx="980" cy="38" r="0.8" fill="white" opacity="0.9"/>
-    <circle cx="1050" cy="20" r="0.7" fill="white" opacity="0.7"/>
-    <circle cx="1130" cy="32" r="0.9" fill="white" opacity="0.8"/>
-    <circle cx="160" cy="55" r="0.6" fill="white" opacity="0.5"/>
-    <circle cx="700" cy="45" r="0.7" fill="white" opacity="0.6"/>
-    <circle cx="870" cy="50" r="0.8" fill="white" opacity="0.5"/>
+  <g class="star-tw">
+    <circle cx="45"   cy="22" r="1.1" fill="#eaf2ff" opacity="0.95"/>
+    <circle cx="198"  cy="14" r="1.0" fill="#eaf2ff" opacity="0.85"/>
+    <circle cx="310"  cy="30" r="1.2" fill="#eaf2ff" opacity="0.9"/>
+    <circle cx="422"  cy="10" r="0.9" fill="#eaf2ff" opacity="0.8"/>
+    <circle cx="558"  cy="25" r="1.1" fill="#c8e8ff" opacity="0.85"/>
+    <circle cx="670"  cy="8"  r="0.8" fill="#eaf2ff" opacity="0.9"/>
+    <circle cx="795"  cy="18" r="1.0" fill="#eaf2ff" opacity="0.8"/>
+    <circle cx="910"  cy="32" r="1.2" fill="#c8e8ff" opacity="0.85"/>
+    <circle cx="1060" cy="12" r="0.9" fill="#eaf2ff" opacity="0.9"/>
+    <circle cx="1148" cy="28" r="1.1" fill="#eaf2ff" opacity="0.8"/>
+  </g>
+  <g class="star-tw2">
+    <circle cx="88"   cy="45" r="0.8" fill="white" opacity="0.7"/>
+    <circle cx="155"  cy="38" r="0.7" fill="white" opacity="0.6"/>
+    <circle cx="262"  cy="55" r="0.9" fill="#d0f0ff" opacity="0.75"/>
+    <circle cx="385"  cy="42" r="0.7" fill="white" opacity="0.65"/>
+    <circle cx="490"  cy="60" r="0.8" fill="white" opacity="0.7"/>
+    <circle cx="612"  cy="48" r="0.7" fill="#d0f0ff" opacity="0.6"/>
+    <circle cx="738"  cy="38" r="0.9" fill="white" opacity="0.75"/>
+    <circle cx="848"  cy="55" r="0.7" fill="white" opacity="0.65"/>
+    <circle cx="972"  cy="44" r="0.8" fill="white" opacity="0.7"/>
+    <circle cx="1100" cy="58" r="0.7" fill="#d0f0ff" opacity="0.6"/>
+  </g>
+  <g class="star-tw3">
+    <circle cx="120"  cy="28" r="0.6" fill="white" opacity="0.5"/>
+    <circle cx="234"  cy="18" r="0.5" fill="white" opacity="0.45"/>
+    <circle cx="350"  cy="62" r="0.6" fill="white" opacity="0.5"/>
+    <circle cx="475"  cy="35" r="0.5" fill="white" opacity="0.4"/>
+    <circle cx="600"  cy="18" r="0.6" fill="white" opacity="0.5"/>
+    <circle cx="720"  cy="50" r="0.5" fill="white" opacity="0.45"/>
+    <circle cx="852"  cy="28" r="0.6" fill="white" opacity="0.5"/>
+    <circle cx="988"  cy="62" r="0.5" fill="white" opacity="0.4"/>
+    <circle cx="1080" cy="38" r="0.6" fill="white" opacity="0.5"/>
+    <circle cx="1175" cy="50" r="0.5" fill="white" opacity="0.45"/>
+  </g>
+  <g class="star-tw4">
+    <circle cx="70"   cy="65" r="0.8" fill="#4cc9f0" opacity="0.6"/>
+    <circle cx="340"  cy="20" r="0.7" fill="#00e5cc" opacity="0.55"/>
+    <circle cx="520"  cy="50" r="0.8" fill="#4cc9f0" opacity="0.6"/>
+    <circle cx="760"  cy="25" r="0.7" fill="#00e5cc" opacity="0.5"/>
+    <circle cx="1020" cy="65" r="0.8" fill="#4cc9f0" opacity="0.6"/>
   </g>
 
-  <!-- Aurora Borealis - back layer (blurred) -->
-  <g filter="url(#auroraGlow)" opacity="0.6">
-    <path d="M0,60 Q200,20 400,55 Q600,90 800,40 Q1000,5 1200,50" stroke="url(#aurora1)" stroke-width="30" fill="none"/>
-    <path d="M0,90 Q300,45 550,80 Q750,110 950,60 Q1100,30 1200,70" stroke="url(#aurora2)" stroke-width="20" fill="none"/>
+  <circle cx="1108" cy="55" r="42" fill="url(#moonGlow)" filter="url(#moonBlur)" opacity="0.7"/>
+  <circle cx="1108" cy="55" r="22" fill="#eaf2ff" opacity="0.96" filter="url(#glow)"/>
+  <circle cx="1102" cy="52" r="8"  fill="#c0d8f0" opacity="0.35"/>
+  <circle cx="1115" cy="60" r="5"  fill="#b8d0e8" opacity="0.25"/>
+
+  <g filter="url(#auroraBlur)">
+    <path class="aurora"  d="M0,72 Q180,28 420,68 Q640,105 860,52 Q1040,10 1200,58"  stroke="url(#au1)" stroke-width="38" fill="none" opacity="0.55"/>
+    <path class="aurora2" d="M0,100 Q240,55 500,90 Q720,122 960,72 Q1100,42 1200,82" stroke="url(#au2)" stroke-width="28" fill="none" opacity="0.45"/>
+    <path class="aurora3" d="M0,58 Q300,20 580,55 Q820,88 1100,38 Q1160,25 1200,45" stroke="url(#au3)" stroke-width="22" fill="none" opacity="0.38"/>
   </g>
-  <!-- Aurora Borealis - front layer -->
+  <g opacity="0.5">
+    <path class="aurora"  d="M0,72 Q180,28 420,68 Q640,105 860,52 Q1040,10 1200,58"  stroke="url(#au1)" stroke-width="10" fill="none"/>
+    <path class="aurora2" d="M0,100 Q240,55 500,90 Q720,122 960,72 Q1100,42 1200,82" stroke="url(#au2)" stroke-width="7"  fill="none"/>
+    <path class="aurora3" d="M100,80 Q360,42 620,74 Q880,108 1140,55"                stroke="#00ffaa" stroke-width="3"  fill="none" opacity="0.5"/>
+  </g>
+
   <g opacity="0.45">
-    <path d="M0,60 Q200,20 400,55 Q600,90 800,40 Q1000,5 1200,50" stroke="url(#aurora1)" stroke-width="12" fill="none"/>
-    <path d="M0,90 Q300,45 550,80 Q750,110 950,60 Q1100,30 1200,70" stroke="url(#aurora2)" stroke-width="8" fill="none"/>
-    <path d="M100,70 Q350,35 600,65 Q850,95 1100,45" stroke="#00ffaa" stroke-width="3" fill="none" opacity="0.4"/>
+    <polygon points="0,215 70,140 135,185 210,115 295,175 380,120 465,175 545,118 625,170 710,122 795,170 880,110 960,165 1045,118 1130,158 1200,128 1200,215" fill="#162840"/>
+    <polygon points="70,140  88,163  52,163"  fill="url(#snow)" opacity="0.6"/>
+    <polygon points="210,115 230,142 190,142" fill="url(#snow)" opacity="0.6"/>
+    <polygon points="380,120 400,148 360,148" fill="url(#snow)" opacity="0.6"/>
+    <polygon points="545,118 565,146 525,146" fill="url(#snow)" opacity="0.6"/>
+    <polygon points="710,122 730,149 690,149" fill="url(#snow)" opacity="0.6"/>
+    <polygon points="880,110 900,140 860,140" fill="url(#snow)" opacity="0.6"/>
+    <polygon points="1045,118 1065,146 1025,146" fill="url(#snow)" opacity="0.6"/>
   </g>
 
-  <!-- Background far mountains (snowy, pale) -->
-  <g opacity="0.55">
-    <polygon points="0,200 80,110 150,165 220,95 310,160 390,100 470,155 540,105 620,158 700,108 780,155 860,98 940,150 1020,105 1100,148 1200,110 1200,200" fill="#1a2a3a"/>
-    <!-- Snow caps far -->
-    <polygon points="80,110 95,130 65,130" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="220,95 240,120 200,120" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="390,100 412,128 368,128" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="540,105 558,130 522,130" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="700,108 720,133 680,133" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="860,98 882,128 838,128" fill="url(#snow)" opacity="0.7"/>
-    <polygon points="1020,105 1040,130 1000,130" fill="url(#snow)" opacity="0.7"/>
+  <polygon points="0,255 90,155 170,210 255,120 350,192 438,130 525,200 610,140 700,200 790,132 878,195 965,128 1055,188 1140,145 1200,172 1200,255" fill="#0d1e32"/>
+  <path d="M255,120 L278,152 L300,136 L272,162 L240,146 Z" fill="url(#snow)" opacity="0.55"/>
+  <path d="M438,130 L460,162 L480,145 L455,172 L428,155 Z" fill="url(#snow)" opacity="0.5"/>
+  <path d="M610,140 L632,172 L650,155 L628,180 L604,164 Z" fill="url(#snow)" opacity="0.55"/>
+  <path d="M790,132 L812,165 L830,148 L808,174 L780,158 Z" fill="url(#snow)" opacity="0.5"/>
+  <path d="M965,128 L987,162 L1005,145 L982,170 L955,154 Z" fill="url(#snow)" opacity="0.55"/>
+  <polygon points="90,155  112,185   68,185"  fill="url(#snow)"/>
+  <polygon points="255,120 280,155  230,155"  fill="url(#snow)"/>
+  <polygon points="438,130 462,163  414,163"  fill="url(#snow)"/>
+  <polygon points="610,140 634,174  586,174"  fill="url(#snow)"/>
+  <polygon points="790,132 814,166  766,166"  fill="url(#snow)"/>
+  <polygon points="965,128 990,164  940,164"  fill="url(#snow)"/>
+  <polygon points="1140,145 1164,176 1116,176" fill="url(#snow)"/>
+
+  <ellipse cx="600" cy="285" rx="220" ry="20" fill="url(#lake)" opacity="0.7"/>
+  <line x1="410" y1="284" x2="790" y2="284" stroke="#4cc9f0" stroke-width="1" opacity="0.25"/>
+  <ellipse cx="600" cy="290" rx="180" ry="8" fill="url(#au1)" opacity="0.12" filter="url(#softGlow)"/>
+
+  <g fill="#08192c">
+    <polygon points="0,300 14,262 28,300"/>
+    <polygon points="12,300 28,248 44,300"/>
+    <polygon points="28,300 44,258 60,300"/>
+    <polygon points="44,300 60,248 76,300"/>
+    <polygon points="62,300 78,254 94,300"/>
+    <polygon points="130,300 145,250 160,300"/>
+    <polygon points="146,300 162,240 178,300"/>
+    <polygon points="162,300 178,252 194,300"/>
+    <polygon points="820,300 836,246 852,300"/>
+    <polygon points="838,300 854,238 870,300"/>
+    <polygon points="856,300 872,250 888,300"/>
+    <polygon points="900,300 916,248 932,300"/>
+    <polygon points="918,300 934,242 950,300"/>
+    <polygon points="1050,300 1066,252 1082,300"/>
+    <polygon points="1068,300 1084,244 1100,300"/>
+    <polygon points="1086,300 1102,256 1118,300"/>
+    <polygon points="1140,300 1156,248 1172,300"/>
+    <polygon points="1158,300 1174,240 1190,300"/>
+    <polygon points="1176,300 1192,252 1208,300"/>
   </g>
 
-  <!-- Mid mountains (dark, with glaciers) -->
-  <g>
-    <!-- Main mountain range -->
-    <polygon points="0,230 100,130 180,190 260,100 360,175 440,108 530,180 610,120 700,185 780,115 870,178 950,105 1040,170 1120,125 1200,160 1200,230" fill="#0f1e2e"/>
-    <!-- Glacier patches on mid mountains -->
-    <path d="M260,100 L280,130 L300,115 L275,140 L245,125 Z" fill="url(#glacier)" opacity="0.65"/>
-    <path d="M440,108 L460,138 L478,120 L455,148 L425,130 Z" fill="url(#glacier)" opacity="0.6"/>
-    <path d="M610,120 L630,150 L648,133 L625,158 L600,142 Z" fill="url(#glacier)" opacity="0.65"/>
-    <path d="M780,115 L800,145 L818,128 L796,155 L768,138 Z" fill="url(#glacier)" opacity="0.6"/>
-    <path d="M950,105 L970,135 L988,118 L966,145 L940,128 Z" fill="url(#glacier)" opacity="0.65"/>
+  <ellipse cx="450" cy="320" rx="200" ry="22" fill="#0d2238" opacity="0.9"/>
+  <ellipse cx="410" cy="310" rx="80"  ry="35" fill="url(#fireGlow)" filter="url(#fireBlur)" class="fire-glow"/>
+  <rect x="396" y="316" width="28" height="5" rx="2" fill="#3d1c06" transform="rotate(-18,410,318)"/>
+  <rect x="394" y="316" width="28" height="5" rx="2" fill="#4a2208" transform="rotate(16,410,318)"/>
+  <g class="fire-flicker" transform-origin="410 314">
+    <polygon points="410,314 403,302 408,310 407,298 412,308 414,296 416,308 419,300 414,312 422,304 417,314" fill="#ff9f43" opacity="0.95"/>
+    <polygon points="410,314 405,306 409,312 408,303 412,310 413,300 415,310 418,304 413,314" fill="#f7c948" opacity="0.7"/>
+    <polygon points="410,315 407,308 410,313 411,305 413,312" fill="#fff3b0" opacity="0.5"/>
+  </g>
+  <circle class="smoke"  cx="410" cy="298" r="4" fill="#2a4060" opacity="0.6"/>
+  <circle class="smoke2" cx="412" cy="298" r="3" fill="#1e3550" opacity="0.5"/>
+  <circle class="smoke3" cx="408" cy="298" r="3.5" fill="#243a58" opacity="0.45"/>
 
-    <!-- Snow caps mid -->
-    <polygon points="100,130 118,158 82,158" fill="url(#snow)"/>
-    <polygon points="260,100 282,135 238,135" fill="url(#snow)"/>
-    <polygon points="440,108 462,140 418,140" fill="url(#snow)"/>
-    <polygon points="610,120 632,152 588,152" fill="url(#snow)"/>
-    <polygon points="780,115 802,148 758,148" fill="url(#snow)"/>
-    <polygon points="950,105 972,140 928,140" fill="url(#snow)"/>
-    <polygon points="1120,125 1140,155 1100,155" fill="url(#snow)"/>
+  <polygon points="340,328 395,285 450,328" fill="#0c2338" stroke="#1a3d5c" stroke-width="1.2"/>
+  <polygon points="345,328 395,290 448,328" fill="#081828"/>
+  <path d="M375,328 Q395,310 415,328 Z" fill="#050e18"/>
+  <line x1="395" y1="285" x2="310" y2="325" stroke="#4cc9f0" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <line x1="395" y1="285" x2="478" y2="322" stroke="#4cc9f0" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5"/>
+  <path d="M395,285 Q418,296 448,325" stroke="#eaf2ff" stroke-width="1.2" fill="none" opacity="0.25"/>
+
+  <g transform="translate(472,290)" opacity="0.9">
+    <rect x="-2" y="-5" width="3.5" height="45" rx="1.5" fill="#596275"/>
+    <path d="M-2,-5 Q-12,-18 -16,-14 Q-14,-8 -2,0 Z" fill="#eaf2ff"/>
+    <polygon points="-0.5,40 2,40 1,50" fill="#eaf2ff"/>
   </g>
 
-  <!-- Glacier river in valley (glowing teal) -->
-  <g filter="url(#riverGlow)" opacity="0.9">
-    <path d="M0,255 Q80,240 160,252 Q250,265 340,248 Q420,235 510,250 Q600,262 690,245 Q780,232 870,248 Q960,260 1050,244 Q1130,232 1200,245" stroke="url(#river)" stroke-width="8" fill="none"/>
-    <path d="M0,258 Q80,244 160,256 Q250,268 340,251 Q420,238 510,253 Q600,265 690,248 Q780,235 870,251 Q960,263 1050,247 Q1130,235 1200,248" stroke="#00e5cc" stroke-width="2" fill="none" opacity="0.6"/>
+  <g transform="translate(492,308)" opacity="0.95">
+    <ellipse cx="25" cy="22" rx="30" ry="8" fill="#0d2238"/>
+    <rect x="4" y="10" width="44" height="28" rx="2" fill="#0f1f30" stroke="#1a3a55" stroke-width="0.8"/>
+    <rect x="6" y="12" width="40" height="22" rx="1" fill="#051020"/>
+    <rect x="6" y="12" width="40" height="22" rx="1" fill="#00e5cc" opacity="0.08" class="laptop-glow"/>
+    <rect x="9" y="16" width="18" height="1.2" rx="0.5" fill="#00e5cc" opacity="0.7"/>
+    <rect x="9" y="19" width="24" height="1.2" rx="0.5" fill="#4cc9f0" opacity="0.5"/>
+    <rect x="9" y="22" width="15" height="1.2" rx="0.5" fill="#00e5cc" opacity="0.6"/>
+    <rect x="9" y="25" width="20" height="1.2" rx="0.5" fill="#596275" opacity="0.4"/>
+    <rect x="9" y="28" width="3"  height="1.5" fill="#00e5cc" opacity="0.9" class="cursor-blink"/>
+    <rect x="5" y="11" width="42" height="24" rx="1.5" fill="none" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+    <ellipse cx="26" cy="23" rx="18" ry="10" fill="url(#screenGlow)" filter="url(#softGlow)" class="laptop-glow"/>
+    <rect x="4" y="34" width="44" height="1" fill="#0a1a28"/>
   </g>
 
-  <!-- Foreground dark pine forest -->
-  <g fill="#05111a">
-    <!-- Left cluster -->
-    <polygon points="0,280 12,230 24,280"/>
-    <polygon points="8,280 22,215 36,280"/>
-    <polygon points="20,280 35,225 50,280"/>
-    <polygon points="35,280 50,210 65,280"/>
-    <polygon points="48,280 63,220 78,280"/>
-    <polygon points="60,280 76,205 92,280"/>
-    <polygon points="75,280 90,215 105,280"/>
-    <polygon points="88,280 103,222 118,280"/>
-    <!-- Mid-left -->
-    <polygon points="150,280 165,218 180,280"/>
-    <polygon points="165,280 180,208 195,280"/>
-    <polygon points="178,280 193,220 208,280"/>
-    <polygon points="195,280 210,225 225,280"/>
-    <!-- Mid -->
-    <polygon points="380,280 394,215 408,280"/>
-    <polygon points="395,280 410,205 425,280"/>
-    <polygon points="408,280 423,218 438,280"/>
-    <!-- Right-mid -->
-    <polygon points="600,280 614,212 628,280"/>
-    <polygon points="615,280 630,202 645,280"/>
-    <polygon points="630,280 645,215 660,280"/>
-    <polygon points="645,280 660,208 675,280"/>
-    <!-- Right cluster -->
-    <polygon points="900,280 914,218 928,280"/>
-    <polygon points="915,280 930,208 945,280"/>
-    <polygon points="930,280 945,220 960,280"/>
-    <polygon points="945,280 960,225 975,280"/>
-    <!-- Far right -->
-    <polygon points="1080,280 1094,215 1108,280"/>
-    <polygon points="1095,280 1110,205 1125,280"/>
-    <polygon points="1110,280 1125,218 1140,280"/>
-    <polygon points="1150,280 1165,210 1180,280"/>
-    <polygon points="1165,280 1180,200 1195,280"/>
-    <polygon points="1180,280 1195,215 1210,280"/>
+  <g transform="translate(360,296)" opacity="0.9">
+    <circle cx="0" cy="-24" r="7" fill="#04111e"/>
+    <path d="M-7,-24 Q-7,-34 0,-36 Q7,-34 7,-24" fill="#1a2a3a"/>
+    <path d="M-6,-17 L-8,5 L-2,5 L0,-4 L2,5 L8,5 L6,-17 Z" fill="#0d1e30"/>
+    <path d="M-6,-12 L-20,-6 L-15,2 L-2,-8 Z" fill="#0d1e30"/>
+    <path d="M6,-12 L18,-5 L14,2 L2,-7 Z" fill="#0d1e30"/>
+    <rect x="-22" y="-10" width="16" height="12" rx="1" fill="#1a3a50" stroke="#4cc9f0" stroke-width="0.5" opacity="0.9"/>
+    <line x1="-20" y1="-8" x2="-8" y2="-8" stroke="#00e5cc" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-20" y1="-6" x2="-8" y2="-6" stroke="#596275" stroke-width="0.5" opacity="0.4"/>
+    <line x1="-20" y1="-4" x2="-8" y2="-4" stroke="#596275" stroke-width="0.5" opacity="0.3"/>
+    <path d="M-3,5 L-5,22 L-1,22 L0,12 L1,22 L5,22 L3,5 Z" fill="#0a1828"/>
+    <path d="M-5,22 L-7,28 L0,28 L-1,22 Z" fill="#162030"/>
+    <path d="M1,22 L-0,28 L6,28 L7,22 Z"  fill="#162030"/>
   </g>
 
-  <!-- Foreground ground -->
-  <rect x="0" y="268" width="1200" height="12" fill="#03090f" opacity="0.8"/>
+  <g transform="translate(455,320)" opacity="0.7">
+    <ellipse cx="0"  cy="0" rx="8" ry="5" fill="#162030"/>
+    <ellipse cx="18" cy="0" rx="8" ry="5" fill="#162030"/>
+  </g>
+  <rect x="558" y="312" width="22" height="16" rx="1" fill="#0a1e30" stroke="#4cc9f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="561" y1="317" x2="577" y2="317" stroke="#596275" stroke-width="0.6" opacity="0.5"/>
+  <line x1="561" y1="320" x2="577" y2="320" stroke="#596275" stroke-width="0.6" opacity="0.4"/>
+  <line x1="561" y1="323" x2="572" y2="323" stroke="#596275" stroke-width="0.6" opacity="0.3"/>
 
-  <!-- Bottom fade -->
-  <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#03090f" stop-opacity="0"/>
-    <stop offset="100%" stop-color="#03090f" stop-opacity="1"/>
-  </linearGradient>
-  <rect x="0" y="240" width="1200" height="40" fill="url(#bottomFade)"/>
+  <rect x="0" y="328" width="1200" height="52" fill="#04111e"/>
+  <path d="M0,328 Q200,320 400,328 Q600,336 800,326 Q1000,318 1200,325 L1200,328 Z" fill="#eaf2ff" opacity="0.05"/>
 
-  <!-- Glowing moon -->
-  <circle cx="1100" cy="55" r="18" fill="#fff8e0" opacity="0.9" filter="url(#glow)"/>
-  <circle cx="1100" cy="55" r="22" fill="#fffce0" opacity="0.15" filter="url(#auroraGlow)"/>
+  <g opacity="0.6">
+    <circle class="snow-fall"  cx="100"  cy="0" r="1.5" fill="white"/>
+    <circle class="snow-fall2" cx="230"  cy="0" r="1.2" fill="white"/>
+    <circle class="snow-fall3" cx="390"  cy="0" r="1.8" fill="white"/>
+    <circle class="snow-fall4" cx="550"  cy="0" r="1.3" fill="white"/>
+    <circle class="snow-fall5" cx="680"  cy="0" r="1.6" fill="white"/>
+    <circle class="snow-fall"  cx="810"  cy="0" r="1.1" fill="white"/>
+    <circle class="snow-fall2" cx="950"  cy="0" r="1.4" fill="white"/>
+    <circle class="snow-fall3" cx="1080" cy="0" r="1.7" fill="white"/>
+    <circle class="snow-fall4" cx="178"  cy="0" r="1.2" fill="white"/>
+    <circle class="snow-fall5" cx="460"  cy="0" r="1.5" fill="white"/>
+    <circle class="snow-fall"  cx="740"  cy="0" r="1.3" fill="white"/>
+    <circle class="snow-fall2" cx="1020" cy="0" r="1.6" fill="white"/>
+  </g>
+
+  <g class="cloud-drift"  opacity="0.2"><ellipse cx="200" cy="175" rx="90"  ry="25" fill="#4cc9f0"/><ellipse cx="260" cy="165" rx="60" ry="20" fill="#4cc9f0"/></g>
+  <g class="cloud-drift2" opacity="0.15"><ellipse cx="900" cy="165" rx="100" ry="28" fill="#4cc9f0"/><ellipse cx="980" cy="155" rx="65" ry="20" fill="#4cc9f0"/></g>
+
+  <rect x="250" y="192" width="700" height="72" rx="10" fill="#08111f" fill-opacity="0.78" stroke="#00e5cc" stroke-width="0.6" stroke-opacity="0.3"/>
+  <text x="272" y="224" font-size="38" fill="#00e5cc" opacity="0.22" font-family="Georgia,serif">"</text>
+  <text x="300" y="226" font-size="14" fill="#eaf2ff" opacity="0.92" font-family="'Space Grotesk',system-ui,sans-serif">The mountain never becomes easier.</text>
+  <text x="300" y="247" font-size="14" fill="#eaf2ff" opacity="0.92" font-family="'Space Grotesk',system-ui,sans-serif">The climber becomes wiser.</text>
+  <text x="920" y="260" font-size="38" fill="#00e5cc" opacity="0.22" font-family="Georgia,serif">"</text>
+
+  <rect x="0" y="342" width="1200" height="38" fill="url(#pageFade)"/>
 </svg>

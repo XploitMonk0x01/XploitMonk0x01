@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" width="1200" height="48">
+  <defs>
+    <linearGradient id="scanGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#020b14" stop-opacity="0"/>
+      <stop offset="10%"  stop-color="#005f73"/>
+      <stop offset="30%"  stop-color="#00b4d8"/>
+      <stop offset="50%"  stop-color="#00e5cc"/>
+      <stop offset="70%"  stop-color="#00b4d8"/>
+      <stop offset="90%"  stop-color="#005f73"/>
+      <stop offset="100%" stop-color="#020b14" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"   stop-color="#020b14"/>
+      <stop offset="100%" stop-color="#030f1c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .sweep { animation: sweep 3.5s linear infinite; }
+      @keyframes sweep {
+        0%   { transform: translateX(-300px); opacity: 0; }
+        10%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { transform: translateX(1500px); opacity: 0; }
+      }
+      .blink { animation: blink 1.8s step-end infinite; }
+      @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="48" fill="url(#bgGrad)"/>
+
+  <!-- Static baseline -->
+  <line x1="0" y1="24" x2="1200" y2="24" stroke="url(#scanGrad)" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Glowing sweep line -->
+  <g class="sweep">
+    <rect x="0" y="18" width="180" height="12"
+          fill="none" stroke="url(#scanGrad)" stroke-width="0" opacity="0"/>
+    <line x1="0" y1="24" x2="180" y2="24"
+          stroke="url(#scanGrad)" stroke-width="3"
+          filter="url(#glow)" opacity="0.9"/>
+  </g>
+
+  <!-- Center diamond ornament -->
+  <g transform="translate(600,24)">
+    <polygon points="0,-7 8,0 0,7 -8,0" fill="none" stroke="#00e5cc" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="0" cy="0" r="2.5" fill="#00e5cc" opacity="0.9" filter="url(#glow)"/>
+  </g>
+
+  <!-- Corner brackets -->
+  <g stroke="#00e5cc" stroke-width="1.2" fill="none" opacity="0.5">
+    <path d="M40,14 L28,14 L28,34 L40,34"/>
+    <path d="M1160,14 L1172,14 L1172,34 L1160,34"/>
+  </g>
+
+  <!-- Side dots -->
+  <circle cx="70"  cy="24" r="2" fill="#00b4d8" opacity="0.5"/>
+  <circle cx="90"  cy="24" r="1.5" fill="#00b4d8" opacity="0.3"/>
+  <circle cx="110" cy="24" r="1" fill="#00b4d8" opacity="0.2"/>
+
+  <circle cx="1130" cy="24" r="2" fill="#00b4d8" opacity="0.5"/>
+  <circle cx="1110" cy="24" r="1.5" fill="#00b4d8" opacity="0.3"/>
+  <circle cx="1090" cy="24" r="1" fill="#00b4d8" opacity="0.2"/>
+</svg>

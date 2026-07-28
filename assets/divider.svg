@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 52" width="1200" height="52">
+  <defs>
+    <linearGradient id="ridge" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1e30"/>
+      <stop offset="100%" stop-color="#060f1c"/>
+    </linearGradient>
+    <linearGradient id="ropeGrad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#08111f" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#596275"/>
+      <stop offset="90%" stop-color="#596275"/>
+      <stop offset="100%" stop-color="#08111f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="climbGlow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .climber-walk { animation: walk 18s linear infinite; }
+      @keyframes walk { 0%{transform:translateX(-40px)} 100%{transform:translateX(1240px)} }
+      .rope-trail { animation: ropeGrow 18s linear infinite; }
+      .snow-cap-glow { animation: capGlow 3s ease-in-out infinite alternate; }
+      @keyframes capGlow { from{opacity:0.5} to{opacity:0.9} }
+    </style>
+  </defs>
+
+  <rect width="1200" height="52" fill="#08111f"/>
+
+  <!-- Ridge silhouette -->
+  <polygon points="0,52 0,38 30,22 60,36 90,18 120,32 150,15 180,28 210,10 240,24 270,14 300,26 330,8 360,20 390,12 420,24 450,10 480,22 510,6 540,18 570,11 600,24 630,12 660,20 690,8 720,22 750,14 780,26 810,10 840,22 870,16 900,28 930,12 960,24 990,10 1020,22 1050,14 1080,26 1110,10 1140,20 1170,14 1200,22 1200,52"
+           fill="url(#ridge)"/>
+
+  <!-- Snow patches on ridgeline tips -->
+  <g fill="#eaf2ff" class="snow-cap-glow">
+    <polygon points="150,15 160,22 140,22" opacity="0.4"/>
+    <polygon points="210,10 220,17 200,17" opacity="0.45"/>
+    <polygon points="330,8  340,15 320,15" opacity="0.5"/>
+    <polygon points="450,10 460,17 440,17" opacity="0.4"/>
+    <polygon points="510,6  520,13 500,13" opacity="0.55"/>
+    <polygon points="690,8  700,15 680,15" opacity="0.5"/>
+    <polygon points="810,10 820,17 800,17" opacity="0.45"/>
+    <polygon points="990,10 1000,17 980,17" opacity="0.5"/>
+    <polygon points="1110,10 1120,17 1100,17" opacity="0.4"/>
+  </g>
+
+  <!-- Rope trail (static dashed line across mid) -->
+  <line x1="0" y1="30" x2="1200" y2="30" stroke="url(#ropeGrad)" stroke-width="1" stroke-dasharray="6 8" opacity="0.4"/>
+
+  <!-- Walking climber figure (animated) -->
+  <g class="climber-walk">
+    <!-- Head + helmet -->
+    <circle cx="0" cy="20" r="5" fill="#0d1e30"/>
+    <path d="M-5,20 Q-5,13 0,11 Q5,13 5,20" fill="#1a3a5a"/>
+    <!-- Headlamp -->
+    <circle cx="0" cy="14" r="1.5" fill="#f7c948" filter="url(#climbGlow)"/>
+    <!-- Body -->
+    <rect x="-4" y="25" width="8" height="12" rx="1" fill="#0c2235"/>
+    <!-- Arms animated walking -->
+    <line x1="-4" y1="28" x2="-10" y2="34" stroke="#0c2235" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="4"  y1="28" x2="10"  y2="34" stroke="#0c2235" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="-2" y1="37" x2="-4"  y2="46" stroke="#081628" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="2"  y1="37" x2="5"   y2="46" stroke="#081628" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Trekking pole -->
+    <line x1="-10" y1="28" x2="-14" y2="46" stroke="#4cc9f0" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+    <!-- Backpack bump -->
+    <rect x="4" y="25" width="5" height="8" rx="2" fill="#0a1a2e"/>
+  </g>
+</svg>

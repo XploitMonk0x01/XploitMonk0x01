@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" aria-label="Route map — learning trail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#060f1c"/>
+      <stop offset="100%" stop-color="#030b14"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eaf2ff"/>
+      <stop offset="100%" stop-color="#a0c8e0" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="completeTrail" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#00e5cc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4cc9f0" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cloudBlur">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <style>
+      text { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite alternate; }
+      @keyframes pulse { from{opacity:0.5} to{opacity:1} }
+      .cloud-drift  { animation: cloudDriftL 20s ease-in-out infinite alternate; }
+      .cloud-drift2 { animation: cloudDriftR 25s ease-in-out infinite alternate; }
+      @keyframes cloudDriftL { from{transform:translateX(0)} to{transform:translateX(40px)} }
+      @keyframes cloudDriftR { from{transform:translateX(0)} to{transform:translateX(-40px)} }
+      .route-current { stroke-dasharray:8 6; animation: dashMove 2s linear infinite; }
+      @keyframes dashMove { to{stroke-dashoffset:-28} }
+      .snow-sparkle { animation: sparkle 3s ease-in-out infinite alternate; }
+      @keyframes sparkle { from{opacity:0.3} to{opacity:0.9} }
+    </style>
+  </defs>
+
+  <rect width="1000" height="420" fill="url(#bg)"/>
+  <rect x="1" y="1" width="998" height="418" rx="2" fill="none" stroke="#0c3a4a" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="500" y="25" text-anchor="middle" font-size="9"  fill="#2c7a8a" letter-spacing="5" font-family="'JetBrains Mono',monospace">CHAPTER IV — THE ROUTE</text>
+  <text x="500" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#eaf2ff" font-family="'Space Grotesk',system-ui,sans-serif">Summit Routes</text>
+
+  <!-- Mountain body -->
+  <polygon points="500,55 200,360 800,360" fill="#0d1e32" opacity="0.9"/>
+  <!-- Mountain secondary flanks -->
+  <polygon points="500,55 140,360 350,360" fill="#0a1828" opacity="0.8"/>
+  <polygon points="500,55 650,360 860,360" fill="#0a1828" opacity="0.8"/>
+  <!-- Far distant flanks -->
+  <polygon points="70,360 180,260 310,360"  fill="#071220" opacity="0.7"/>
+  <polygon points="930,360 820,260 690,360" fill="#071220" opacity="0.7"/>
+
+  <!-- Snow/ice cap -->
+  <polygon points="500,55 440,120 560,120" fill="url(#snow)" opacity="0.9"/>
+  <!-- Glacier patches -->
+  <path d="M500,55 L480,95 L500,110 L520,95 Z" fill="#eaf2ff" opacity="0.6"/>
+  <path d="M440,120 L430,145 L450,138 L460,122 Z" fill="#c0d8f0" opacity="0.5"/>
+  <path d="M560,120 L570,145 L550,138 L540,122 Z" fill="#c0d8f0" opacity="0.5"/>
+
+  <!-- ── COMPLETED ROUTES (teal glow) ── -->
+  <!-- Route 1: Malware RE — main spine -->
+  <path d="M500,340 Q490,280 480,230 Q472,190 465,155 Q455,120 450,100"
+        stroke="url(#completeTrail)" stroke-width="3" fill="none" filter="url(#glow)"/>
+  <path d="M500,340 Q490,280 480,230 Q472,190 465,155 Q455,120 450,100"
+        stroke="#00e5cc" stroke-width="1.5" fill="none"/>
+  <!-- Route 2: VAPT — left branch -->
+  <path d="M500,340 Q460,300 420,270 Q385,245 355,220 Q325,195 300,175"
+        stroke="#4cc9f0" stroke-width="2.5" fill="none" filter="url(#glow)" opacity="0.8"/>
+  <path d="M500,340 Q460,300 420,270 Q385,245 355,220 Q325,195 300,175"
+        stroke="#4cc9f0" stroke-width="1.2" fill="none"/>
+
+  <!-- ── CURRENT ROUTE (blue pulsing dashed) ── -->
+  <!-- Route: DFIR deep -->
+  <path class="route-current" d="M500,340 Q515,290 530,250 Q545,210 558,175 Q568,148 575,125"
+        stroke="#a78bfa" stroke-width="2.5" fill="none" opacity="0.85"/>
+
+  <!-- ── FUTURE ROUTES (gray, under cloud) ── -->
+  <!-- Route: Firmware RE -->
+  <path d="M500,340 Q535,305 570,278 Q605,252 635,225 Q662,200 682,178"
+        stroke="#596275" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="5 8"/>
+  <!-- Route: Kernel -->
+  <path d="M500,340 Q555,310 610,285 Q660,260 700,238 Q730,220 755,200"
+        stroke="#596275" stroke-width="2" fill="none" opacity="0.35" stroke-dasharray="5 8"/>
+  <!-- Route: Windows Internals -->
+  <path d="M500,340 Q575,318 640,300 Q700,282 748,262 Q788,244 815,228"
+        stroke="#596275" stroke-width="1.5" fill="none" opacity="0.2" stroke-dasharray="4 10"/>
+
+  <!-- Cloud cover over future routes -->
+  <g class="cloud-drift" opacity="0.72">
+    <ellipse cx="700" cy="200" rx="120" ry="55" fill="#0d1e32" filter="url(#cloudBlur)"/>
+    <ellipse cx="780" cy="230" rx="90"  ry="45" fill="#0c1c2e" filter="url(#cloudBlur)"/>
+  </g>
+  <g class="cloud-drift2" opacity="0.65">
+    <ellipse cx="640" cy="180" rx="100" ry="50" fill="#0e2038" filter="url(#cloudBlur)"/>
+    <ellipse cx="830" cy="210" rx="80"  ry="40" fill="#0c1c2e" filter="url(#cloudBlur)"/>
+  </g>
+  <!-- Softer cloud wisps -->
+  <g opacity="0.45">
+    <ellipse cx="720" cy="215" rx="140" ry="40" fill="#1a3050" filter="url(#cloudBlur)"/>
+  </g>
+
+  <!-- Waypoint markers — completed -->
+  <g>
+    <!-- Summit (partial) -->
+    <circle cx="500" cy="55" r="8" fill="#f7c948" opacity="0.9" class="pulse" filter="url(#glow)"/>
+    <text x="515" y="48" font-size="8" fill="#f7c948" opacity="0.8">Summit ↑</text>
+    <!-- Malware RE waypoint -->
+    <circle cx="455" cy="140" r="6" fill="#00e5cc" class="pulse"/>
+    <text x="470" y="138" font-size="8" fill="#00e5cc">Malware RE</text>
+    <!-- VAPT waypoint -->
+    <circle cx="310" cy="178" r="6" fill="#4cc9f0" class="pulse"/>
+    <text x="325" y="176" font-size="8" fill="#4cc9f0">VAPT</text>
+  </g>
+
+  <!-- Current route marker -->
+  <circle cx="570" cy="135" r="7" fill="#a78bfa" opacity="0.9" class="pulse" filter="url(#glow)"/>
+  <text x="585" y="133" font-size="8" fill="#a78bfa">DFIR (active)</text>
+
+  <!-- Future route labels (faded) -->
+  <text x="688" y="168" font-size="8" fill="#596275" opacity="0.6">Firmware RE</text>
+  <text x="762" y="195" font-size="8" fill="#596275" opacity="0.4">Kernel...</text>
+
+  <!-- Base camp marker -->
+  <circle cx="500" cy="355" r="8" fill="#ff9f43" filter="url(#glow)"/>
+  <text x="515" y="359" font-size="8" fill="#ff9f43">Base Camp</text>
+
+  <!-- Snow sparkles on summit -->
+  <g class="snow-sparkle">
+    <circle cx="492" cy="72" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="508" cy="68" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="500" cy="80" r="1"   fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(28,370)">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#00e5cc" stroke-width="2.5"/>
+    <circle cx="28" cy="0" r="5" fill="#00e5cc"/>
+    <text x="38" y="4" font-size="9" fill="#596275">Completed</text>
+    <line x1="110" y1="0" x2="134" y2="0" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="5 4"/>
+    <circle cx="138" cy="0" r="5" fill="#a78bfa"/>
+    <text x="148" y="4" font-size="9" fill="#596275">Current</text>
+    <line x1="215" y1="0" x2="239" y2="0" stroke="#596275" stroke-width="2" stroke-dasharray="4 8"/>
+    <text x="248" y="4" font-size="9" fill="#596275">Ahead (in cloud)</text>
+  </g>
+
+  <!-- Grid elevation lines (contour effect) -->
+  <g opacity="0.06" stroke="#4cc9f0" stroke-width="0.7" fill="none">
+    <path d="M300,360 Q500,338 700,360"/>
+    <path d="M350,320 Q500,298 650,320"/>
+    <path d="M370,280 Q500,258 630,280"/>
+    <path d="M390,240 Q500,218 610,240"/>
+    <path d="M420,200 Q500,178 580,200"/>
+    <path d="M440,160 Q500,138 560,160"/>
+    <path d="M460,130 Q500,108 540,130"/>
+  </g>
+</svg>

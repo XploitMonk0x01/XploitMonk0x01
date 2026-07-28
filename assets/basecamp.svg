@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 195" width="1000" height="195" role="img" aria-label="Base camp — operator dossier">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"   stop-color="#060f1c"/>
+      <stop offset="100%" stop-color="#030b14"/>
+    </linearGradient>
+    <radialGradient id="fireWarm" cx="15%" cy="60%" r="55%">
+      <stop offset="0%"   stop-color="#ff9f43" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff9f43" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="divLine" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"   stop-color="#00e5cc" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00e5cc" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .lantern { animation: lanternSway 2.8s ease-in-out infinite alternate; transform-origin: 80px 15px; }
+      @keyframes lanternSway {
+        from { transform: rotate(-4deg); }
+        to   { transform: rotate(4deg); }
+      }
+      .lantern-glow { animation: lanternGlowPulse 1.4s ease-in-out infinite alternate; }
+      @keyframes lanternGlowPulse { from{opacity:0.4} to{opacity:0.9} }
+      .compass-needle { animation: compassSpin 12s ease-in-out infinite alternate; transform-origin: 80px 152px; }
+      @keyframes compassSpin {
+        0%   { transform: rotate(-8deg); }
+        50%  { transform: rotate(3deg);  }
+        100% { transform: rotate(-5deg); }
+      }
+      .pulse { animation: pulse 2.5s ease-in-out infinite alternate; }
+      @keyframes pulse { from{opacity:0.5} to{opacity:1} }
+      .cursor { animation: blink 1.1s step-end infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    </style>
+  </defs>
+
+  <!-- Body -->
+  <rect width="1000" height="195" rx="14" fill="url(#bg)"/>
+  <!-- Campfire warm ambient glow -->
+  <rect width="1000" height="195" rx="14" fill="url(#fireWarm)"/>
+  <!-- Border -->
+  <rect x="1" y="1" width="998" height="193" rx="13" fill="none" stroke="#0c3a4a" stroke-width="1.2"/>
+  <!-- Top accent line -->
+  <rect x="1" y="1" width="998" height="2" rx="1" fill="#00e5cc" opacity="0.2"/>
+
+  <!-- Grid bg texture -->
+  <g opacity="0.04" stroke="#4cc9f0" stroke-width="0.8">
+    <path d="M0 48h1000M0 96h1000M0 144h1000"/>
+    <path d="M200 0v195M400 0v195M600 0v195M800 0v195"/>
+  </g>
+
+  <!-- ── COLUMN 1: COORDINATES + LANTERN ── -->
+  <!-- Lantern -->
+  <g class="lantern">
+    <rect x="68" y="18" width="24" height="32" rx="4" fill="#1a2a3a" stroke="#4cc9f0" stroke-width="1"/>
+    <!-- Lantern glass -->
+    <rect x="70" y="20" width="20" height="26" rx="3" fill="#0a1e2e" stroke="#00e5cc" stroke-width="0.5" opacity="0.8"/>
+    <!-- Flame inside -->
+    <g class="lantern-glow">
+      <ellipse cx="80" cy="31" rx="6" ry="8" fill="#ff9f43" opacity="0.7"/>
+      <ellipse cx="80" cy="33" rx="4" ry="5" fill="#f7c948" opacity="0.8"/>
+    </g>
+    <!-- Lantern handle -->
+    <rect x="78" y="12" width="4" height="8" rx="1" fill="#596275"/>
+    <rect x="75" y="50" width="10" height="3" rx="1" fill="#596275"/>
+    <!-- Hanging rope -->
+    <line x1="80" y1="8" x2="80" y2="12" stroke="#596275" stroke-width="1.5"/>
+  </g>
+  <!-- Hook at top -->
+  <circle cx="80" cy="8" r="3" fill="none" stroke="#596275" stroke-width="1.2"/>
+
+  <!-- Section label -->
+  <text x="28" y="88" font-size="9" fill="#2c7a8a" letter-spacing="4">FIELD COORDINATES</text>
+  <!-- Coordinate data -->
+  <text x="28" y="108" font-size="10" fill="#596275">lat  <tspan fill="#4cc9f0">28.6139° N</tspan></text>
+  <text x="28" y="124" font-size="10" fill="#596275">lon  <tspan fill="#4cc9f0">77.2090° E</tspan></text>
+  <text x="28" y="140" font-size="10" fill="#596275">elev <tspan fill="#f7c948">Base Camp</tspan></text>
+  <text x="28" y="156" font-size="10" fill="#596275">temp <tspan fill="#eaf2ff">-4°C · clear</tspan></text>
+  <text x="28" y="172" font-size="10" fill="#596275">wind <tspan fill="#eaf2ff">8 kn NW</tspan></text>
+
+  <!-- Vertical divider 1 -->
+  <line x1="205" y1="22" x2="205" y2="178" stroke="url(#divLine)" stroke-width="1"/>
+
+  <!-- ── COLUMN 2: OPERATOR DOSSIER ── -->
+  <text x="224" y="38" font-size="9"  fill="#2c7a8a" letter-spacing="4">OPERATOR DOSSIER</text>
+  <!-- Handle / name -->
+  <text x="224" y="64" font-size="22" font-weight="700" fill="#eaf2ff" letter-spacing="1">XploitMonk0x01</text>
+  <!-- Underline -->
+  <line x1="224" y1="70" x2="590" y2="70" stroke="#00e5cc" stroke-width="1" opacity="0.4" stroke-dasharray="4 6"/>
+
+  <text x="224" y="90"  font-size="10" fill="#596275">name    <tspan fill="#eaf2ff">Chandan Singh</tspan></text>
+  <text x="224" y="107" font-size="10" fill="#596275">region  <tspan fill="#eaf2ff">India</tspan></text>
+  <text x="224" y="124" font-size="10" fill="#596275">focus   <tspan fill="#00e5cc">Malware RE · DFIR · CTF</tspan></text>
+  <text x="224" y="141" font-size="10" fill="#596275">mode    <tspan fill="#00e5cc">curious · persistent</tspan></text>
+  <text x="224" y="158" font-size="10" fill="#596275">signal  <tspan fill="#4cc9f0">stable</tspan></text>
+  <text x="224" y="175" font-size="10" fill="#596275">open_to <tspan fill="#f7c948">internships · research · CTF collab</tspan></text>
+
+  <!-- Vertical divider 2 -->
+  <line x1="615" y1="22" x2="615" y2="178" stroke="url(#divLine)" stroke-width="1"/>
+
+  <!-- ── COLUMN 3: OBJECTIVE + COMPASS ── -->
+  <text x="634" y="38" font-size="9" fill="#2c7a8a" letter-spacing="4">CURRENT OBJECTIVE</text>
+
+  <!-- Objective block -->
+  <rect x="634" y="48" width="328" height="58" rx="7" fill="#030b14" stroke="#00e5cc" stroke-width="0.8" opacity="0.8"/>
+  <text x="648" y="66" font-size="10" fill="#4cc9f0" letter-spacing="1">EXPEDITION</text>
+  <text x="648" y="82" font-size="13" font-weight="700" fill="#eaf2ff">XploitVerse Platform</text>
+  <text x="648" y="97" font-size="9"  fill="#596275">Hands-on labs · terminal-first · 0→capable</text>
+
+  <!-- Compass rose -->
+  <g transform="translate(710,145)">
+    <!-- Outer ring -->
+    <circle r="34" fill="#030e18" stroke="#0c3a4a" stroke-width="1.5"/>
+    <circle r="30" fill="none"   stroke="#0c3a4a" stroke-width="0.8"/>
+    <!-- Cardinal points -->
+    <text x="0"   y="-20" text-anchor="middle" font-size="8" fill="#eaf2ff" opacity="0.7">N</text>
+    <text x="0"   y="26"  text-anchor="middle" font-size="8" fill="#596275" opacity="0.6">S</text>
+    <text x="22"  y="3"   text-anchor="middle" font-size="8" fill="#596275" opacity="0.6">E</text>
+    <text x="-22" y="3"   text-anchor="middle" font-size="8" fill="#596275" opacity="0.6">W</text>
+    <!-- Tick marks -->
+    <g stroke="#596275" stroke-width="0.8" opacity="0.5">
+      <line x1="0" y1="-30" x2="0"  y2="-24"/>
+      <line x1="0" y1="24"  x2="0"  y2="30"/>
+      <line x1="30" y1="0"  x2="24" y2="0"/>
+      <line x1="-30" y1="0" x2="-24" y2="0"/>
+    </g>
+    <!-- Needle (N=teal, S=dark) -->
+    <g class="compass-needle">
+      <polygon points="0,-22 3,0 0,4 -3,0" fill="#00e5cc" filter="url(#glow)"/>
+      <polygon points="0,22 3,0 0,-4 -3,0" fill="#596275" opacity="0.7"/>
+    </g>
+    <!-- Center dot -->
+    <circle r="3" fill="#eaf2ff"/>
+  </g>
+
+  <!-- Altitude / status -->
+  <text x="762" y="120" font-size="9"  fill="#2c7a8a" letter-spacing="2">STATUS</text>
+  <text x="762" y="136" font-size="11" fill="#00e5cc" font-weight="700">↑ ASCENDING</text>
+
+  <!-- Footer -->
+  <text x="28" y="190" font-size="9" fill="#1a3a4a" letter-spacing="1">
+    "Every expedition begins at base camp. Gear checked. Route studied. Summit ahead."
+  </text>
+</svg>

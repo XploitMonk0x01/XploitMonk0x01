@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" role="img" aria-labelledby="t d">
+  <title id="t">Next Summit — Trail Ahead</title>
+  <desc id="d">A cinematic panel showing the next objectives as waypoints on a mountain trail.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"   stop-color="#020b14"/>
+      <stop offset="100%" stop-color="#04141f"/>
+    </linearGradient>
+    <linearGradient id="trailLine" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#020b14" stop-opacity="0"/>
+      <stop offset="5%"   stop-color="#00e5cc"/>
+      <stop offset="95%"  stop-color="#00e5cc"/>
+      <stop offset="100%" stop-color="#020b14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .pulse  { animation: pulse 2.8s ease-in-out infinite alternate; }
+      .pulse2 { animation: pulse 3.6s ease-in-out infinite alternate; }
+      .pulse3 { animation: pulse 2.2s ease-in-out infinite alternate; }
+      .pulse4 { animation: pulse 4.1s ease-in-out infinite alternate; }
+      @keyframes pulse { from{opacity:0.4;} to{opacity:1;} }
+      .bar { animation: fillBar 2s ease-out forwards; transform-origin: left; }
+      @keyframes fillBar { from{transform:scaleX(0);} to{transform:scaleX(1);} }
+      .ascend { animation: ascend 1.8s ease-out infinite alternate; }
+      @keyframes ascend {
+        from { transform: translateY(4px); opacity:0.5; }
+        to   { transform: translateY(0px); opacity:1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="200" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="998" height="198" rx="13" fill="none" stroke="#0c4a5a" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1000" height="36" rx="13" fill="#030e1a"/>
+  <rect x="0" y="28" width="1000" height="8" fill="#030e1a"/>
+  <text x="500" y="22" text-anchor="middle" font-size="10" fill="#5eead4" letter-spacing="5">
+    ~/trail-map $ next --summit
+  </text>
+  <!-- Ascending arrow indicator -->
+  <text x="940" y="22" font-size="14" fill="#00e5cc" class="ascend">↑</text>
+
+  <!-- Trail baseline -->
+  <line x1="40" y1="115" x2="960" y2="115" stroke="url(#trailLine)" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Waypoint 1: Advanced Malware -->
+  <g transform="translate(95,115)">
+    <circle r="10" fill="#020b14" stroke="#00e5cc" stroke-width="2" class="pulse" filter="url(#glow)"/>
+    <text x="0" y="-22" text-anchor="middle" font-size="9" fill="#00e5cc" letter-spacing="1">01</text>
+    <line x1="0" y1="10" x2="0" y2="40" stroke="#00e5cc" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="54" text-anchor="middle" font-size="9" font-weight="700" fill="#e8fbff">Advanced</text>
+    <text x="0" y="67" text-anchor="middle" font-size="9" fill="#e8fbff">Malware</text>
+    <text x="0" y="80" text-anchor="middle" font-size="8" fill="#5eead4">Unpack · C2 · Obfusc</text>
+  </g>
+
+  <!-- Connecting path (upward slope) -->
+  <path d="M105,105 Q200,75 295,90" stroke="#00e5cc" stroke-width="1" stroke-dasharray="5 5" fill="none" opacity="0.4"/>
+
+  <!-- Waypoint 2: Reverse Engineering deep -->
+  <g transform="translate(305,90)">
+    <circle r="10" fill="#020b14" stroke="#38bdf8" stroke-width="2" class="pulse2" filter="url(#glow)"/>
+    <text x="0" y="-22" text-anchor="middle" font-size="9" fill="#38bdf8" letter-spacing="1">02</text>
+    <line x1="0" y1="10" x2="0" y2="25" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="39" text-anchor="middle" font-size="9" font-weight="700" fill="#e8fbff">Reverse Eng.</text>
+    <text x="0" y="52" text-anchor="middle" font-size="8" fill="#5eead4">Anti-debug · Packer</text>
+    <text x="0" y="64" text-anchor="middle" font-size="8" fill="#5eead4">Firmware RE</text>
+  </g>
+
+  <!-- Path 2→3 -->
+  <path d="M315,80 Q420,50 505,65" stroke="#38bdf8" stroke-width="1" stroke-dasharray="5 5" fill="none" opacity="0.4"/>
+
+  <!-- Waypoint 3: DFIR deep -->
+  <g transform="translate(515,65)">
+    <circle r="10" fill="#020b14" stroke="#a78bfa" stroke-width="2" class="pulse3" filter="url(#glow)"/>
+    <text x="0" y="-22" text-anchor="middle" font-size="9" fill="#a78bfa" letter-spacing="1">03</text>
+    <line x1="0" y1="10" x2="0" y2="50" stroke="#a78bfa" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="64" text-anchor="middle" font-size="9" font-weight="700" fill="#e8fbff">DFIR</text>
+    <text x="0" y="77" text-anchor="middle" font-size="8" fill="#c4b5fd">Memory · Timelines</text>
+    <text x="0" y="89" text-anchor="middle" font-size="8" fill="#c4b5fd">Detection IOCs</text>
+  </g>
+
+  <!-- Path 3→4 -->
+  <path d="M525,55 Q640,25 720,40" stroke="#a78bfa" stroke-width="1" stroke-dasharray="5 5" fill="none" opacity="0.4"/>
+
+  <!-- Waypoint 4: OSINT -->
+  <g transform="translate(730,40)">
+    <circle r="10" fill="#020b14" stroke="#fbbf24" stroke-width="2" class="pulse4" filter="url(#glow)"/>
+    <text x="0" y="-22" text-anchor="middle" font-size="9" fill="#fbbf24" letter-spacing="1">04</text>
+    <line x1="0" y1="10" x2="0" y2="75" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="89" text-anchor="middle" font-size="9" font-weight="700" fill="#e8fbff">OSINT</text>
+    <text x="0" y="102" text-anchor="middle" font-size="8" fill="#fde68a">GEOINT · Graph</text>
+    <text x="0" y="114" text-anchor="middle" font-size="8" fill="#fde68a">Investigative craft</text>
+  </g>
+
+  <!-- Path 4→summit -->
+  <path d="M740,30 Q840,5 920,18" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 6" fill="none" opacity="0.35"/>
+
+  <!-- Summit marker (top) -->
+  <g transform="translate(925,18)">
+    <polygon points="0,-18 12,0 -12,0" fill="#00e5cc" opacity="0.7" filter="url(#glow)" class="pulse"/>
+    <text x="0" y="16" text-anchor="middle" font-size="8" fill="#00e5cc" letter-spacing="1">SUMMIT</text>
+    <text x="0" y="28" text-anchor="middle" font-size="7" fill="#5eead4">always ahead</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="500" y="192" text-anchor="middle" font-size="9" fill="#1a4a5a" letter-spacing="2">
+    "The summit awaits — but first, I'll reverse-engineer the trail map."
+  </text>
+</svg>

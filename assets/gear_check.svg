@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img" aria-label="Gear check — skill backpack">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#060f1c"/>
+      <stop offset="100%" stop-color="#030b14"/>
+    </linearGradient>
+    <linearGradient id="packBody" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f2030"/>
+      <stop offset="100%" stop-color="#071525"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .pulse  { animation: pulse 2.8s ease-in-out infinite alternate; }
+      .pulse2 { animation: pulse 3.5s ease-in-out infinite alternate; }
+      .pulse3 { animation: pulse 2.2s ease-in-out infinite alternate; }
+      .pulse4 { animation: pulse 4.1s ease-in-out infinite alternate; }
+      @keyframes pulse { from{opacity:0.5} to{opacity:1} }
+      .compass-needle { animation: needleSpin 10s ease-in-out infinite alternate; transform-origin: 500px 250px; }
+      @keyframes needleSpin { 0%{transform:rotate(-12deg)} 50%{transform:rotate(5deg)} 100%{transform:rotate(-8deg)} }
+      .rope-sway { animation: ropeSway 4s ease-in-out infinite alternate; transform-origin: 310px 155px; }
+      @keyframes ropeSway { from{transform:rotate(-3deg)} to{transform:rotate(3deg)} }
+      .shine { animation: shine 4s ease-in-out infinite alternate; }
+      @keyframes shine { 0%{opacity:0.1} 50%{opacity:0.4} 100%{opacity:0.15} }
+    </style>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#bg)"/>
+  <rect x="1" y="1" width="998" height="498" rx="2" fill="none" stroke="#0c3a4a" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="500" y="28" text-anchor="middle" font-size="10" fill="#2c7a8a" letter-spacing="5">CHAPTER III — GEAR CHECK</text>
+  <text x="500" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#eaf2ff" font-family="'Space Grotesk',system-ui,sans-serif">The Pack</text>
+  <text x="500" y="64" text-anchor="middle" font-size="10" fill="#596275" letter-spacing="2">every tool has its place · every skill its purpose</text>
+
+  <!-- Backpack outer shell (top-down view) -->
+  <rect x="300" y="80" width="400" height="370" rx="50" fill="url(#packBody)" stroke="#1a3a5a" stroke-width="2"/>
+  <!-- Pack top loop -->
+  <rect x="464" y="72" width="72" height="18" rx="9" fill="#0f2030" stroke="#1a3a5a" stroke-width="1.5"/>
+  <!-- Shoulder strap left (top-down silhouette) -->
+  <rect x="278" y="90" width="28" height="280" rx="14" fill="#0a1a28" stroke="#0f2535" stroke-width="1"/>
+  <!-- Shoulder strap right -->
+  <rect x="694" y="90" width="28" height="280" rx="14" fill="#0a1a28" stroke="#0f2535" stroke-width="1"/>
+  <!-- Hip belt -->
+  <rect x="295" y="390" width="410" height="22" rx="11" fill="#0a1a28" stroke="#0f2535" stroke-width="1"/>
+  <!-- Inner divider lines -->
+  <line x1="500" y1="90" x2="500" y2="445" stroke="#142535" stroke-width="1.5"/>
+  <line x1="305" y1="270" x2="695" y2="270" stroke="#142535" stroke-width="1.5"/>
+
+  <!-- ── COMPARTMENT 1: Ice Axe → Reverse Engineering (top-left) ── -->
+  <g>
+    <rect x="310" y="90" width="180" height="172" rx="12" fill="#030e18" stroke="#00e5cc" stroke-width="1.2" class="pulse"/>
+    <!-- Shine overlay -->
+    <rect x="310" y="90" width="180" height="172" rx="12" fill="#00e5cc" opacity="0.03" class="shine"/>
+    <!-- Ice axe icon -->
+    <g transform="translate(370,135)" opacity="0.8">
+      <!-- Shaft -->
+      <rect x="-2" y="-30" width="4" height="55" rx="2" fill="#596275"/>
+      <!-- Pick head (horizontal) -->
+      <path d="M-2,-30 Q-20,-42 -24,-36 Q-20,-26 -2,-22 Z" fill="#eaf2ff" opacity="0.9"/>
+      <!-- Adze -->
+      <path d="M2,-30 Q16,-36 18,-30 Q14,-22 2,-24 Z" fill="#c0d8f0" opacity="0.7"/>
+      <!-- Spike -->
+      <polygon points="-1,25 2,25 0,35" fill="#eaf2ff" opacity="0.8"/>
+    </g>
+    <text x="400" y="177" text-anchor="middle" font-size="9"  fill="#4cc9f0" letter-spacing="2">ICE AXE</text>
+    <text x="400" y="194" text-anchor="middle" font-size="14" font-weight="700" fill="#00e5cc">Reverse Eng.</text>
+    <text x="400" y="210" text-anchor="middle" font-size="8"  fill="#596275">Ghidra · IDA · x64dbg · YARA</text>
+    <text x="400" y="224" text-anchor="middle" font-size="8"  fill="#596275">PEStudio · Radare2</text>
+    <line x1="325" y1="238" x2="475" y2="238" stroke="#00e5cc" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+    <text x="400" y="252" text-anchor="middle" font-size="8" fill="#1a4a5a">primary weapon</text>
+  </g>
+
+  <!-- ── COMPARTMENT 2: Compass → DFIR (top-right) ── -->
+  <g>
+    <rect x="510" y="90" width="180" height="172" rx="12" fill="#030e18" stroke="#a78bfa" stroke-width="1.2" class="pulse2"/>
+    <rect x="510" y="90" width="180" height="172" rx="12" fill="#a78bfa" opacity="0.02" class="shine"/>
+    <!-- Compass icon -->
+    <g transform="translate(600,135)">
+      <circle r="26" fill="#030e18" stroke="#a78bfa" stroke-width="1.5"/>
+      <circle r="22" fill="none"    stroke="#1a2a3a" stroke-width="0.8"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="7" fill="#eaf2ff" opacity="0.7">N</text>
+      <text x="0" y="18"  text-anchor="middle" font-size="7" fill="#596275" opacity="0.5">S</text>
+      <text x="16" y="3"  text-anchor="middle" font-size="7" fill="#596275" opacity="0.5">E</text>
+      <text x="-16" y="3" text-anchor="middle" font-size="7" fill="#596275" opacity="0.5">W</text>
+      <!-- Needle -->
+      <g class="compass-needle">
+        <polygon points="0,-18 2.5,0 0,3 -2.5,0" fill="#a78bfa" filter="url(#glow)"/>
+        <polygon points="0,18 2.5,0 0,-3 -2.5,0" fill="#596275" opacity="0.6"/>
+      </g>
+      <circle r="2.5" fill="#eaf2ff"/>
+    </g>
+    <text x="600" y="177" text-anchor="middle" font-size="9"  fill="#a78bfa" letter-spacing="2">COMPASS</text>
+    <text x="600" y="194" text-anchor="middle" font-size="14" font-weight="700" fill="#c4b5fd">DFIR</text>
+    <text x="600" y="210" text-anchor="middle" font-size="8"  fill="#596275">Volatility · Autopsy · Wireshark</text>
+    <text x="600" y="224" text-anchor="middle" font-size="8"  fill="#596275">IOC extraction · timeline analysis</text>
+    <line x1="525" y1="238" x2="675" y2="238" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+    <text x="600" y="252" text-anchor="middle" font-size="8" fill="#1a1a3a">trace every artefact</text>
+  </g>
+
+  <!-- ── COMPARTMENT 3: Rope → Linux (bottom-left) ── -->
+  <g>
+    <rect x="310" y="278" width="180" height="172" rx="12" fill="#030e18" stroke="#2dc653" stroke-width="1.2" class="pulse3"/>
+    <rect x="310" y="278" width="180" height="172" rx="12" fill="#2dc653" opacity="0.02" class="shine"/>
+    <!-- Rope coil icon -->
+    <g class="rope-sway" transform="translate(400,340)">
+      <circle r="22" fill="none" stroke="#80ffb4" stroke-width="4" stroke-dasharray="8 6" opacity="0.7"/>
+      <circle r="13" fill="none" stroke="#2dc653" stroke-width="3" stroke-dasharray="6 5" opacity="0.6"/>
+      <circle r="5"  fill="none" stroke="#80ffb4" stroke-width="2" opacity="0.5"/>
+      <!-- Rope end tail -->
+      <path d="M22,0 Q35,10 38,24" stroke="#80ffb4" stroke-width="3" fill="none" opacity="0.7"/>
+    </g>
+    <text x="400" y="374" text-anchor="middle" font-size="9"  fill="#2dc653" letter-spacing="2">ROPE</text>
+    <text x="400" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#80ffb4">Linux</text>
+    <text x="400" y="407" text-anchor="middle" font-size="8"  fill="#596275">Bash · Kali · Arch · Vim</text>
+    <text x="400" y="421" text-anchor="middle" font-size="8"  fill="#596275">scripting · automation</text>
+    <line x1="325" y1="432" x2="475" y2="432" stroke="#2dc653" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+    <text x="400" y="440" text-anchor="middle" font-size="8" fill="#0a2218">lifeline of the climb</text>
+  </g>
+
+  <!-- ── COMPARTMENT 4: Carabiner → Docker/Infra (bottom-right) ── -->
+  <g>
+    <rect x="510" y="278" width="180" height="172" rx="12" fill="#030e18" stroke="#4cc9f0" stroke-width="1.2" class="pulse4"/>
+    <rect x="510" y="278" width="180" height="172" rx="12" fill="#4cc9f0" opacity="0.02" class="shine"/>
+    <!-- Carabiner icon -->
+    <g transform="translate(600,340)">
+      <ellipse rx="18" ry="26" fill="none" stroke="#4cc9f0" stroke-width="4" opacity="0.8"/>
+      <!-- Gate opening -->
+      <path d="M18,-10 L22,-10 L22,10 L18,10" stroke="#4cc9f0" stroke-width="3" fill="none" opacity="0.5"/>
+      <!-- Gate line (open) -->
+      <line x1="18" y1="-8" x2="24" y2="8" stroke="#4cc9f0" stroke-width="2" opacity="0.6"/>
+    </g>
+    <text x="600" y="374" text-anchor="middle" font-size="9"  fill="#4cc9f0" letter-spacing="2">CARABINER</text>
+    <text x="600" y="391" text-anchor="middle" font-size="14" font-weight="700" fill="#4cc9f0">Build &amp; Infra</text>
+    <text x="600" y="407" text-anchor="middle" font-size="8"  fill="#596275">Docker · Node.js · Express</text>
+    <text x="600" y="421" text-anchor="middle" font-size="8"  fill="#596275">MongoDB · Python · AWS</text>
+    <line x1="525" y1="432" x2="675" y2="432" stroke="#4cc9f0" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+    <text x="600" y="440" text-anchor="middle" font-size="8" fill="#0a1a2a">the links that hold it together</text>
+  </g>
+
+  <!-- Center badge -->
+  <g transform="translate(500,270)">
+    <circle r="20" fill="#08111f" stroke="#00e5cc" stroke-width="1.5" filter="url(#glow)" opacity="0.9"/>
+    <text y="5" text-anchor="middle" font-size="16" fill="#00e5cc" opacity="0.8">⛰</text>
+  </g>
+
+  <!-- Side label: Helmet / GPS / Notebook / Drone (small indicators) -->
+  <g opacity="0.6">
+    <!-- Helmet → Web Security -->
+    <rect x="12" y="95" width="14" height="10" rx="3" fill="#e63946" opacity="0.7"/>
+    <text x="30" y="103" font-size="8" fill="#ff8090" font-family="'JetBrains Mono',monospace">HELMET</text>
+    <text x="30" y="114" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Web Security</text>
+    <!-- GPS → Python -->
+    <rect x="16" y="140" width="10" height="14" rx="2" fill="#f7c948" opacity="0.7"/>
+    <circle cx="21" cy="134" r="4" fill="none" stroke="#f7c948" stroke-width="1.2" opacity="0.7"/>
+    <text x="30" y="146" font-size="8" fill="#f7c948" font-family="'JetBrains Mono',monospace">GPS</text>
+    <text x="30" y="157" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Python · C</text>
+    <!-- Notebook → Research -->
+    <rect x="12" y="178" width="14" height="18" rx="2" fill="#eaf2ff" opacity="0.3"/>
+    <text x="30" y="190" font-size="8" fill="#eaf2ff" font-family="'JetBrains Mono',monospace">NOTEBOOK</text>
+    <text x="30" y="201" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Research</text>
+    <!-- Drone → OSINT -->
+    <text x="16" y="230" font-size="14" fill="#4cc9f0" opacity="0.6">⬡</text>
+    <text x="30" y="232" font-size="8" fill="#4cc9f0" font-family="'JetBrains Mono',monospace">DRONE</text>
+    <text x="30" y="243" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">OSINT · GEOINT</text>
+  </g>
+
+  <!-- Offensive secondary (right sidebar) -->
+  <g opacity="0.6">
+    <text x="980" y="110" text-anchor="end" font-size="8" fill="#e63946" font-family="'JetBrains Mono',monospace">CRAMPONS</text>
+    <text x="980" y="121" text-anchor="end" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Offensive Sec</text>
+    <text x="980" y="148" text-anchor="end" font-size="8" fill="#f7c948" font-family="'JetBrains Mono',monospace">ALTIMETER</text>
+    <text x="980" y="159" text-anchor="end" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Burp · Nmap</text>
+    <text x="980" y="186" text-anchor="end" font-size="8" fill="#ff9f43" font-family="'JetBrains Mono',monospace">FLARE GUN</text>
+    <text x="980" y="197" text-anchor="end" font-size="7" fill="#596275" font-family="'JetBrains Mono',monospace">Metasploit</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="500" y="492" text-anchor="middle" font-size="9" fill="#1a3a4a" letter-spacing="1" font-family="'JetBrains Mono',monospace">Gear checked. Every tool earned. Nothing carried that wasn't needed.</text>
+</svg>
